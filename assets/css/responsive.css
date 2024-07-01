@@ -1,0 +1,1652 @@
+@media only screen and (min-width: 1367px) {
+  .card__text {
+    width: 50%;
+    height: 613px;
+    background-color: var(--white);
+    padding: 3rem;
+    padding-left: 10rem;
+    position: absolute;
+    top: -15%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .left__card p {
+    width: 560px;
+    font-size: var(--p);
+    color: #0c0f11;
+    opacity: 0.5;
+  }
+
+  .left__card h1 {
+    font-family: var(--gelion-black);
+    text-transform: uppercase;
+    font-size: var(--h2);
+    font-weight: 900;
+    line-height: 45px;
+    padding-bottom: 18px;
+    width: 560px;
+  }
+
+  .title {
+    font-size: var(--link);
+    position: absolute;
+    left: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #002d2d;
+  }
+
+  /* .images .top_one {
+    left: 39%;
+    top: 2rem;
+    width: 274px;
+    height: 327px;
+  }
+
+  .images .top_two {
+    right: 39%;
+    top: 1rem;
+    width: 346px;
+    height: 343px;
+  }
+
+  .images .center_two {
+    right: 35%;
+    top: 36%;
+    width: 256px;
+    height: 289px;
+  }
+
+  .images .center_one {
+    left: 35%;
+    top: 40%;
+    width: 336px;
+    height: 322px;
+  }
+
+  .images .bottom_one {
+    bottom: 0;
+    left: 39%;
+    width: 336px;
+    height: 220px;
+  }
+
+  .images .bottom_two {
+    right: 39%;
+    bottom: 0;
+    width: 317px;
+    height: 327px;
+  } */
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 3rem !important;
+  }
+  .card__text {
+    width: 500px;
+    height: 693px;
+    background-color: var(--white);
+    padding: 3rem;
+    position: absolute;
+    top: -8rem;
+    z-index: -1;
+  }
+
+  .title {
+    font-size: var(--link);
+    position: relative;
+    left: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: -1rem;
+    gap: 55px;
+  }
+
+  .title_part {
+    display: flex;
+    gap: 25px;
+  }
+
+  .small__heading {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1rem;
+  }
+  .small__heading .title {
+    order: 2;
+  }
+
+  .main_heading {
+    margin-top: 0rem;
+    width: 100%;
+    gap: 5rem;
+  }
+
+  /* ----------------------- Section Four ------------------------- */
+  .work__heading__btn .work_heading {
+    width: 100%;
+  }
+
+  .image_container {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .image_container .image__box .image__title {
+    width: 100%;
+  }
+
+  .image_container .image__box .image__title h1 {
+    font-size: 30px;
+  }
+
+  /* ----------------------- Section Five ------------------------- */
+  .venture_heading .left_side {
+    width: 40%;
+  }
+
+  .venture_heading .right_side {
+    width: 60%;
+  }
+
+  .venture_heading h1 {
+    font-size: 56px;
+    width: 100%;
+    line-height: 56px;
+  }
+
+  .venture_heading p {
+    width: 60%;
+  }
+
+  .venture_top .venture_details,
+  .venture_down .venture_details {
+    width: 70%;
+    height: 319px;
+    padding: 0 1rem;
+  }
+
+  .venture_top .venture_details h2,
+  .venture_down .venture_details h2 {
+    width: 70%;
+  }
+
+  .venture_down .venture_details {
+    padding-left: 0rem;
+  }
+
+  /*----------------------- Section Six / Blogs ---------------------- */
+  .knowledge_heading h1 {
+    width: 90%;
+    line-height: 65px;
+  }
+
+  .knowledge_image_content .image_box h2 {
+    width: 100%;
+  }
+
+  .knowledge_heading .small_title p {
+    width: 90%;
+  }
+
+  /* ------------------------------ Section Eight --------------------------- */
+
+  .campus_heading .campus_heading_small {
+    width: 40%;
+  }
+
+  .campus_heading .campus_heading_large {
+    width: 60%;
+  }
+  .campus_heading .campus_heading_large h1 {
+    width: 85%;
+  }
+  /* --------------------------- Section nine --------------------- */
+  .right_part .middle_part .img_part {
+    margin-bottom: 1rem;
+    width: 45%;
+    height: 340px;
+  }
+
+  .right_part .left-part {
+    width: 40%;
+    height: 376px;
+    right: 0rem;
+  }
+
+  .share_images {
+    gap: 1.2rem;
+  }
+
+  /* -----------------------Counter Section ------------------- */
+  .counter_content {
+    gap: 1rem;
+  }
+
+  /* --------------------------- Section Ten --------------------- */
+  .testimonial_content .left_content h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .testimonial_content .left_content h1 .white {
+    margin-left: 3rem;
+  }
+
+  .testimonial_content .right_content,
+  .testimonial_content .left_content {
+    width: 100%;
+  }
+
+  /* --------------------------- Section Eleven --------------------- */
+  .image_showcase {
+    height: 1300px;
+  }
+
+  .showcase_heading h1 {
+    width: 90%;
+  }
+
+  .images .top_one {
+    left: 1rem;
+    top: 2rem;
+  }
+
+  .images .top_two {
+    right: 3rem;
+    top: 1rem;
+  }
+
+  .images .center_one {
+    left: -8rem;
+    top: 40%;
+  }
+
+  .images .center_two {
+    right: -5rem;
+    top: 36%;
+  }
+
+  .images .bottom_one {
+    bottom: 0;
+    left: 5rem;
+  }
+
+  .images .bottom_two {
+    right: 3rem;
+    bottom: 0;
+  }
+
+  /* --------------------------------------- About Page Start ----------------------------------------------- */
+  .about_article {
+    width: 83%;
+  }
+
+  .venture_images {
+    width: 100%;
+  }
+
+  .venture_card__image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+
+  /* --------------------------------------- Gallery Page Start ----------------------------------------------- */
+
+  .gallery_hedings h1 {
+    width: 70%;
+  }
+
+  .gallery_hedings p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  /* Home Content */
+  .home__content {
+    padding-top: 37%;
+    padding-bottom: 19%;
+  }
+
+  /* --------------------------- Section Ten --------------------- */
+  .testimonial_content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .testimonial_content .right_content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .testimonial_content .right_content .image__container .feedback_box {
+    margin-top: -20rem;
+  }
+
+  /* ----------------------- About Section Two ---------------------- */
+  .education_left p {
+    width: 80%;
+  }
+
+  .education_article p {
+    width: 90%;
+  }
+
+  /* --------------------------------------- Contact Page Start ----------------------------------------------- */
+
+  .contact_left {
+    padding-bottom: 16rem;
+    padding-top: 10rem;
+  }
+
+  .contact_right_bottom {
+    position: absolute;
+    bottom: -15rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .stroke_text {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .home__top .home-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .home__top {
+    width: 100%;
+  }
+
+  /* ------------ White Bg Card ------------------- */
+  .card__text {
+    width: 470px;
+    height: 693px;
+    padding: 1rem;
+    padding-left: 3rem;
+    top: -10%;
+  }
+
+  /* --------------------------- Section Two ------------------------ */
+
+  .main_heading h1,
+  .about_title h1,
+  .work__heading__btn .work_heading h1,
+  .knowledge_heading h1,
+  .media_heading h1,
+  .campus_heading .campus_heading_large h1,
+  .share_heading h1,
+  .about_left_content .about_big_heading,
+  .venture_headings h1,
+  .world_top_headings h1,
+  .images_content h1,
+  .contact_heading h1,
+  .gallery_hedings h1,
+  .gallery_form_content .form_left h1,
+  .mission_top .large_title h1 {
+    font-size: 58px;
+    text-transform: uppercase;
+    line-height: 58px;
+  }
+
+  /* --------------------------- Section Four ------------------------ */
+
+  .image_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* ----------------------- Section Five ------------------------- */
+  .venture_heading h1 {
+    font-size: 48px;
+    width: 100%;
+    line-height: 48px;
+  }
+
+  .venture_top .venture_details p,
+  .venture_down .venture_details p {
+    width: 90%;
+  }
+
+  .venture_top .venture_details h2,
+  .venture_down .venture_details h2 {
+    width: 90%;
+  }
+
+  /* ----------------------------- Section Six ----------------------------- */
+
+  .knowledge_image_content .image_box h2 {
+    font-size: 28px;
+    line-height: 26px;
+    width: 100%;
+  }
+
+  .knowledge_image_content {
+    gap: 18px;
+  }
+
+  /* ----------------------------- Media Section ------------------------ */
+  .media_heading {
+    width: 100%;
+  }
+
+  .media_heading h1 {
+    width: 70%;
+  }
+
+  /* --------------------------- Section nine --------------------- */
+
+  .share_images .left_part {
+    width: 40%;
+  }
+  .share_images .right_part {
+    width: 60%;
+  }
+  /* -----------------------Counter Section ------------------- */
+  .counter_content {
+    align-items: self-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* --------------------------- Section Eleven --------------------- */
+
+  .showcase_heading h1 {
+    width: 80%;
+  }
+
+  .images .top_one {
+    left: -5rem;
+    top: 8rem;
+  }
+
+  .images .top_two {
+    right: -6rem;
+    top: 3rem;
+  }
+
+  .images .center_one {
+    left: -8rem;
+    top: 67%;
+  }
+
+  .images .center_two {
+    right: -5rem;
+    top: 36%;
+    display: none;
+  }
+
+  .images .bottom_one {
+    bottom: 0;
+    left: 5rem;
+    display: none;
+  }
+
+  .images .bottom_two {
+    right: -5rem;
+    bottom: 2rem;
+  }
+  /* --------------------------- Footer --------------------- */
+
+  .footer {
+    padding: 2.5rem 0;
+    height: 85vh;
+  }
+
+  .footer_content {
+    padding-right: 0rem;
+    flex-wrap: wrap;
+  }
+
+  .footer_content .short_links,
+  .footer_content .service_items {
+    width: 40%;
+  }
+
+  .footer_content .contact_info {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  /* -------------------- About Page Hero Section ----------------------- */
+  .about_bottom_article,
+  .about_article {
+    width: 95%;
+  }
+
+  .founder_info {
+    width: 55%;
+  }
+
+  /* ------------- About Section Four ------------ */
+  .about_venture_content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .venture_top_content .venture_images,
+  .venture_top_content {
+    flex-direction: column;
+  }
+
+  .venture_top_content .venture_images {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .venture_bottom_content .venture_images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .venture_bottom_content .venture_images .venture_card__image:nth-child(3) {
+    height: auto;
+  }
+  /* ----------------------- About Section Five --------------------- */
+  .country {
+    position: absolute;
+    left: 4rem;
+    bottom: -4.5rem;
+  }
+  .world-map .world-map_image {
+    width: 60%;
+  }
+
+  .world-map .map_article {
+    width: 40%;
+  }
+
+  .world-map .world-map_image {
+    width: 70%;
+    margin-top: -4rem;
+    z-index: 1;
+  }
+
+  /* ---------------- Mission ------------ */
+  .mission_top .large_title h1 {
+    width: 90%;
+  }
+
+  /* ------------------------ Contact page Start --------------------- */
+
+  .contact_left {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .contact_heading h1 {
+    width: 90%;
+  }
+
+  .contact_right_bottom {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* ------------ White Bg Card ------------------- */
+  .card__text {
+    width: 90%;
+    height: 493px;
+    background-color: var(--white);
+    padding: 1rem;
+  }
+
+  .article_image_part {
+    height: auto;
+    margin-top: 9rem;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+  .article_image_part p {
+    width: 90%;
+    order: 2;
+  }
+
+  .card__container {
+    order: 1;
+  }
+
+  .main_heading {
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  /* --------------------------- Section Three ------------------------ */
+
+  .about__bottom {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .about__bottom a {
+    order: 2;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  /* ----------------------------- Section Six ----------------------------- */
+  .mv_hidden {
+    display: none;
+  }
+
+  .pc_hidden {
+    display: block;
+  }
+
+  .for_mobile_version {
+    display: block;
+    width: 90%;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .knowledge_heading .small_title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .small_title h1 {
+    width: 80%;
+    color: #002d2d;
+  }
+
+  .knowledge__container {
+    margin-top: 2rem;
+  }
+
+  /* ----------------------------- Media Section ------------------------ */
+  .media_heading {
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  .media_heading h4 {
+    width: 90%;
+  }
+
+  .media_card .media__image {
+    height: 500px;
+  }
+
+  .media_card .media__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* ------------------------------ Section Eight --------------------------- */
+  .campus_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .campus_heading .campus_heading_small,
+  .campus_heading .campus_heading_large {
+    width: 100%;
+  }
+
+  .campus_heading .campus_heading_large p {
+    width: 80%;
+    padding-top: 1rem;
+  }
+
+  .campus_image {
+    height: 370px;
+  }
+
+  .counter_box {
+    width: 270px;
+  }
+
+  .right_content {
+    display: none;
+  }
+  /* ------------------------- Testimonial section ------------------- */
+  .testimonial {
+    height: 900px;
+    padding: 0rem;
+  }
+
+  .testimonial_content {
+    gap: 0rem;
+  }
+
+  .testimonial_content .left_content {
+    padding-left: 1rem;
+  }
+
+  .review_card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .review_card__text .blank-box {
+    height: 90px;
+    width: 316px;
+    background-color: var(--white);
+    opacity: 0.2;
+  }
+
+  .review_card__text .blank-box_2 {
+    height: 531px;
+    width: 316px;
+    background-color: var(--white);
+    opacity: 0.2;
+  }
+
+  .review_card__text .feed_back {
+    padding: 1rem;
+    height: 371px;
+    width: 316px;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+
+  /* ----------------------- About Section Two ---------------------- */
+
+  .education {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .education_content {
+    flex-direction: column;
+  }
+
+  /* ----------------------- About Section Five --------------------- */
+  .world_top_headings {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .world-map {
+    flex-direction: column;
+  }
+
+  .world-map .world-map_image,
+  .world-map .map_article {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .world-map .world-map_image {
+    margin-top: 1rem;
+    order: 2;
+  }
+
+  .country .country_down p {
+    width: 70%;
+  }
+
+  /* ------------------------ Contact page Start --------------------- */
+  .contact_content {
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-start;
+  }
+  .contact_left,
+  .contact_right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact_heading h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .contact_left {
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+  }
+
+  .contact_right_bottom {
+    position: absolute;
+    bottom: -20rem;
+    width: 80%;
+    height: min-content;
+    padding: 3rem 2rem;
+  }
+
+  .contact_right {
+    height: 70vh;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .contact_right_top img {
+    margin-top: 3rem;
+  }
+
+  .location_top p {
+    margin-top: 14rem;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  :root {
+    --h1: 48px;
+    --h2: 34px;
+    --h3: 24px;
+    --h4: 20px;
+    --h5: 18px;
+    --h6: 14px;
+    --text: 15px;
+    --p: 16px;
+    --link: 12px;
+  }
+
+  h1 {
+    font-size: var(--fs-1);
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: var(--fs-2);
+  }
+
+  h3 {
+    font-size: var(--fs-3);
+  }
+
+  h4 {
+    font-size: var(--fs-4);
+  }
+
+  h5 {
+    font-size: var(--fs-5);
+  }
+
+  h6 {
+    font-size: var(--fs-6);
+  }
+
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 0.1rem !important;
+  }
+
+  .home__content {
+    padding-top: 60%;
+    padding-bottom: 30%;
+  }
+
+  .home__top {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  .home-heading {
+    order: 2;
+    font-size: 36px;
+    line-height: 32px !important;
+  }
+
+  .stroke_text {
+    line-height: 32px;
+    font-size: var(--h1);
+  }
+
+  .home__top .home-heading {
+    font-size: 36px;
+    font-family: var(--gelion-black);
+    text-transform: uppercase;
+    line-height: 32px;
+  }
+
+  .home-context {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .home__down .liner {
+    width: 100%;
+  }
+
+  .btn_links {
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+
+  .btn-area {
+    display: none;
+  }
+
+  .card__text {
+    top: -10%;
+  }
+
+  .main_heading {
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .left__card h1 {
+    font-size: 34px;
+    line-height: 45px;
+    padding-bottom: 18px;
+  }
+
+  .places .card__container {
+    margin-top: 5rem;
+  }
+
+  .main_heading h1,
+  .about_title h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .brand__container {
+    margin-top: 1rem;
+    padding-top: 0rem;
+  }
+
+  .work_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .work__heading__btn .work_heading {
+    width: 100%;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  .work__heading__btn .work_heading p {
+    width: 90%;
+  }
+
+  .image_container .image__box .image__title h1 {
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    width: 100%;
+  }
+
+  /* ----------------------- Section Five ------------------------- */
+  .mobile_disply_none {
+    display: none;
+  }
+
+  .venture_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .venture_heading .right_side {
+    width: 100%;
+  }
+
+  .venture_heading h1 {
+    width: 100%;
+    color: #2d0505;
+  }
+
+  .pc_visible {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .venture_heading p {
+    padding-top: 1rem;
+    width: 80%;
+    color: #2d0505;
+  }
+
+  .venture_content {
+    margin-top: 3rem;
+  }
+
+  .venture_top,
+  .venture_down {
+    flex-direction: column;
+    align-items: self-start;
+    width: 100%;
+  }
+
+  .venture_top .venture_img,
+  .venture_down .venture_img {
+    width: 100%;
+  }
+
+  .venture_top .venture_details,
+  .venture_down .venture_details {
+    width: 90%;
+    height: 250px;
+  }
+
+  .venture_down:nth-child(2) .venture_details {
+    order: 2;
+  }
+
+  .venture_top .venture_details h2,
+  .venture_down .venture_details h2 {
+    width: 100%;
+  }
+
+  .venture_top .venture_details p,
+  .venture_down .venture_details p {
+    width: 100%;
+  }
+
+  /* ----------------------------- Media Section ------------------------ */
+  .media_heading h1,
+  .campus_heading .campus_heading_large h1,
+  .share_heading h1 {
+    font-size: 48px;
+    line-height: 48px;
+    width: 90%;
+  }
+
+  .middle_part .heading_btn_part {
+    display: none;
+  }
+
+  .share_images {
+    display: none;
+  }
+
+  .pc_hide {
+    display: flex;
+  }
+
+  /* -----------------------Counter Section ------------------- */
+  .counter_content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .counter_box {
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-left: 3rem;
+    gap: 1.5rem;
+  }
+
+  .counter_box .counter_down p {
+    font-size: var(--link);
+    font-family: var(--gelion-regular);
+    color: #000037;
+    width: 80%;
+  }
+
+  /* ------------------------- Testimonial section ------------------- */
+  .testimonial {
+    height: 886px;
+    padding: 0rem;
+  }
+
+  .testimonial_content {
+    gap: 0rem;
+  }
+
+  .review_card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .review_card__text .blank-box {
+    height: 90px;
+    width: 316px;
+    background-color: var(--white);
+    opacity: 0.2;
+  }
+
+  .review_card__text .blank-box_2 {
+    height: 531px;
+    width: 316px;
+    background-color: var(--white);
+    opacity: 0.2;
+  }
+  .review_card__text .feed_back {
+    padding: 1rem;
+    height: 371px;
+    width: 316px;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+
+  /* --------------------------- Section Eleven --------------------- */
+  .showcase_heading h1 {
+    width: 80%;
+  }
+
+  .images .top_one {
+    left: -3rem;
+    top: 8rem;
+    width: 30%;
+  }
+
+  .images .top_two {
+    right: -4rem;
+    top: 3rem;
+    width: 60%;
+  }
+
+  .images .center_one {
+    left: -8rem;
+    top: 67%;
+    width: 60%;
+  }
+
+  .images .bottom_two {
+    right: -6rem;
+    bottom: 2rem;
+    width: 50%;
+  }
+
+  /* -------------------- About Page Hero Section ----------------------- */
+
+  .about_hero {
+    position: relative;
+    height: 100%;
+  }
+
+  .about_left_content .about_big_heading {
+    font-size: 36px;
+    line-height: 32px;
+    width: 70%;
+  }
+
+  .about_hero {
+    flex-direction: column;
+  }
+
+  .about_hero_left {
+    width: 100%;
+    padding-top: 65%;
+    padding-bottom: 1rem;
+  }
+
+  .about_hero_right {
+    position: unset;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .about_right_img {
+    width: 90%;
+  }
+
+  .about_bottom_article {
+    margin-bottom: 1rem;
+  }
+
+  .founder_img {
+    background-image: url("/assets/images/about/Mask\ Group\ 30.png");
+    height: 730px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2.1rem;
+  }
+
+  .founder_info {
+    width: 95%;
+  }
+
+  .founder_info .article {
+    width: 95%;
+  }
+
+  /* ------------- About Section Four ------------ */
+  .about_venture_content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .venture_headings h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .venture_top_content .venture_images,
+  .venture_top_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .venture_top_content .venture_images {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .venture_bottom_content .venture_images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .venture_bottom_content .venture_images .venture_card__image:nth-child(3) {
+    height: auto;
+  }
+
+  .world_top_headings h1 {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  /* ---------------- Mission ------------ */
+  .mission_top {
+    background: none;
+    padding: 3rem 0;
+  }
+  .mission_top_content {
+    flex-direction: column;
+  }
+
+  .mission_top .small_title,
+  .mission_top .large_title,
+  .small_title .mission-article{
+    width: 100%;
+  }
+
+  .small_title .mission-article p{
+    width: 50%;
+  }
+  
+  .small_title .mission-article article{
+    width: 50%;
+  }
+
+  .mission_top .small_title {
+    background-color: #fd9444;
+    padding: 1rem;
+  }
+
+  .mission_top .large_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .mission_top .large_title h1 {
+    width: 70%;
+    padding-top: 1rem;
+  }
+
+  .mission_bottom{
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .mission__list-box{
+    width: 43%;
+  }
+
+  /* -------------------------------------- Image Container / Section Seven------------------------- */
+
+  .images-content .row {
+    margin-left: -25%;
+  }
+
+  /* ----------------------- About Section Seven / Gardinets Image --------------------- */
+
+  .gardinets_image {
+    margin-top: -40rem;
+  }
+
+  /* ----------------------- About Section Eight / All Image --------------------- */
+  .all_images {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+
+  .images_content .btn_one {
+    padding: 14px 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .images_content h1 {
+    font-size: 38px;
+    line-height: 36px;
+  }
+
+  .about_more-content h2 {
+    font-size: 22px;
+    line-height: 28px;
+    width: 95%;
+  }
+  .about_more-content h1 {
+    font-size: 48px;
+    line-height: 48px;
+    width: 90%;
+  }
+
+  .about_more_bottom {
+    margin-top: 2rem;
+  }
+
+  .about_bottom_content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .about_bottom_content .about_bottom-left,
+  .about_bottom_content .about_bottom-right {
+    width: 100%;
+  }
+
+  .about_bottom_content .about_bottom-left p {
+    width: 90%;
+    padding-bottom: 1.5rem;
+  }
+
+  .about_bottom_content .about_bottom-left {
+    order: 2;
+    margin-bottom: 1rem;
+  }
+
+  .about_bottom_content .about_bottom-right {
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* --------------------------------------- Gallery Page Start ----------------------------------------------- */
+
+  .gallery_hedings h1 {
+    width: 90%;
+    font-size: var(--h1);
+    list-style: 48px;
+  }
+
+  .gallery_hedings p {
+    width: 80%;
+  }
+
+  .gallery_contact_form {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .gallery_form_content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .gallery_form_content .form_left,
+  .gallery_form_content .form_right {
+    width: 100%;
+  }
+
+  .gallery_form_content .form_left h1 {
+    width: 70%;
+    font-size: var(--h1);
+    line-height: 48px;
+  }
+
+  .form_right .form_right_container {
+    background-color: #f5f6f7;
+    padding: 1.3rem;
+    height: 608px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* ------------ White Bg Card ------------------- */
+  .article_image_part {
+    height: min-content;
+    margin-top: 13rem;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .article_image_part p {
+    width: 90%;
+    order: 2;
+  }
+
+  .card__container {
+    order: 1;
+  }
+
+  .article {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .article p {
+    width: 100%;
+  }
+
+  .about_bottom_content .about_bottom-right img {
+    height: 379px;
+    width: 100%;
+  }
+
+  /* ------------------------ Contact page Start --------------------- */
+
+  .contact_right_bottom {
+    bottom: -17rem;
+    margin-right: 0.7rem;
+    width: 95%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .contact_right_top img {
+    margin-top: 1rem;
+}
+
+  .location_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .home__content {
+    padding-top: 60%;
+    padding-bottom: 30%;
+  }
+
+  .card__text {
+    top: -10%;
+    height: auto;
+    padding-bottom: 10rem;
+  }
+
+  .article_image_part {
+    margin-top: 16rem;
+  }
+
+  .main_heading {
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .main_heading h1 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .main_heading a {
+    margin-bottom: 4rem;
+  }
+
+  .image_container .image__box .image__title h1 {
+    top: 90%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    width: 100%;
+  }
+
+  .venture_down {
+    margin-top: 6rem;
+  }
+  /* -----------------------Counter Section ------------------- */
+
+  .counter_box {
+    margin-left: 1rem;
+  }
+
+  /* --------------------------- Footer --------------------- */
+
+  .footer {
+    padding: 2.5rem 0;
+    padding-bottom: 7rem;
+    height: 100%;
+  }
+
+  .footer_content {
+    flex-wrap: wrap;
+  }
+
+  .footer_content .short_links,
+  .footer_content .service_items,
+  .footer_content .contact_info {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer_content .service_items {
+    padding-top: 2rem;
+  }
+
+  .footer_content .contact_info {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .footer_content .contact_info p {
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  /* --------------------------- About Section ----------------------- */
+  .buttons .btn_one,
+  .buttons .btn_two {
+    padding: 10px 24px;
+  }
+
+  .education_right_first,
+  .education_right_second {
+    flex-direction: column;
+  }
+  .details_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .country {
+    position: absolute;
+    left: 1.5rem;
+    bottom: -5.5rem;
+  }
+  .country .country_down p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  
+  /* --------------- Mission --------------- */
+  .mission__list-box{
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+  .home__content {
+    padding-top: 60%;
+    padding-bottom: 40%;
+  }
+
+  .places .card__container {
+    margin-top: 10rem;
+  }
+
+    /* ------------------------ Contact page Start --------------------- */
+
+    .contact_right_bottom {
+      bottom: -22rem;
+      margin-right: 0.7rem;
+      width: 95%;
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .contact_right_top img {
+      margin-top: 1rem;
+  }
+}
+
+@media screen and (max-height: 680px) {
+
+    /* ------------------------ Contact page Start --------------------- */
+    .contact_right_bottom {
+      bottom: -32rem;
+      margin-right: 0.7rem;
+      width: 95%;
+      height: auto;
+    }
+  
+    .contact_right_top img {
+      margin-top: 1rem;
+  }
+}
