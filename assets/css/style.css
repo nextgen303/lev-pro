@@ -3032,7 +3032,7 @@ input[type="number"]::placeholder {
   align-items: end;
 }
 
-.program_one-title h1 {
+.program_title h1 {
   font-size: var(--h1);
   font-family: var(--gelion-black);
   line-height: 65px;
@@ -3040,11 +3040,11 @@ input[type="number"]::placeholder {
   width: 70%;
 }
 
-.programe_details-one {
+.programe_details {
   width: 33%;
 }
 
-.programe_details-one p {
+.programe_details p {
   font-size: 18px;
   line-height: 24px;
   font-family: var(--gelion-regular);
@@ -3060,4 +3060,70 @@ input[type="number"]::placeholder {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.program_two{
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.program_title h5{
+  font-size: var(--h5);
+  color: var(--footer-bg);
+  font-family: var(--gelion-regular);
+  padding-bottom: 1.5rem;
+}
+
+.programe_two{
+  padding-top: 15rem;
+}
+
+.rounded_image{
+  background: url("/assets/images/programe/rounded.png");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 384px;
+  margin-top: 10rem;
+  margin-bottom: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3rem;
+
+}
+
+.rounded_content{
+  background-color: var(--bg-four);
+  height: 314px;
+  width: 314px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.rounded_content h3{
+  font-size: var(--h3);
+  color: var(--about-primary-color);
+  text-transform: uppercase;
+  font-family: var(--gelion-black);
+  line-height: 27px;
+}
+
+.rounded_content h6{
+  font-size: var(--h6);
+  font-family: var(--gelion-regular);
+  color: var(--about-primary-color);
+  line-height: 19px;
+  width: 80%;
+
 }
