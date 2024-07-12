@@ -1,5 +1,3 @@
-
-
 // Add Event on elements
 
 const addEventOnElem = function (elem, type, callback) {
@@ -11,8 +9,6 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 };
-
-
 
 // Navbar Toggle
 
@@ -387,9 +383,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-
-
 /*=============== Slider ===============*/
 let programThreeCards = new Swiper(".programs_three_card", {
   loop: true,
@@ -442,6 +435,62 @@ let programThreeCards = new Swiper(".programs_three_card", {
 
     1350: {
       slidesPerView: 4.5,
+    },
+  },
+});
+
+/*=============== Slider ===============*/
+let programFourCards = new Swiper(".programs_four_card", {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    400: {
+      slidesPerView: 1.2,
+    },
+
+    600: {
+      slidesPerView: 1.6,
+    },
+
+    708: {
+      slidesPerView: 2.1,
+    },
+
+    808: {
+      slidesPerView: 2.1,
+    },
+
+    968: {
+      slidesPerView: 2.4,
+    },
+
+    1100: {
+      slidesPerView: 2.7,
+    },
+
+    1160: {
+      slidesPerView: 1.4,
+    },
+
+    1250: {
+      slidesPerView: 2,
+    },
+
+    1350: {
+      slidesPerView: 2.9,
     },
   },
 });
