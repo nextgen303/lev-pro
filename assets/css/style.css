@@ -3014,8 +3014,50 @@ font-family: var(--gelion-black);
   font-size: 29px;
   font-family: var(--gelion-medium);
   line-height: 27px;
-  width: 64%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 1rem;
 }
 
+/* --------------------- Programe Container ------------------------ */
+.program_container{
+  max-width: 988px;
+  margin: 0 auto;
+}
+
+.program_one{
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.program_one-title h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  color: var(--bg-two);
+  width: 70%;
+}
+
+.programe_details-one{
+  width: 33%;
+}
+
+.programe_details-one p{
+  font-size: 18px;
+  line-height: 24px;
+  font-family: var(--gelion-regular);
+color: var(--about-primary-color);
+}
+
+.programe_one_img{
+  padding-top: 7rem;
+  margin: 0 auto;
+}
+
+.programe_one_img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
