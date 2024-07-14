@@ -3135,7 +3135,9 @@ input[type="number"]::placeholder {
 }
 
 .slider,
-.programe_four_slider {
+.programe_four_slider,
+.programe_five_slider
+ {
   width: 150%;
 }
 
@@ -3189,7 +3191,7 @@ input[type="number"]::placeholder {
   color: var(--black);
 }
 
-.program_four {
+.program_four{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -3258,4 +3260,59 @@ input[type="number"]::placeholder {
   font-size: var(--h5);
   line-height: 24px;
   font-family: var(--gelion-regular);
+}
+
+.program_five{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.program_five_title p{
+  width: 100%;
+  text-align: left;
+  font-size: var(--p);
+  line-height: 24px;
+  color: var(--about-primary-color);
+  width: 76%;
+}
+
+.programe_five_subtitle h1{
+  margin-top: 7rem;
+color: var(--bg-two);
+font-size: var(--h1);
+line-height: 65px;
+font-family: var(--gelion-black);
+text-align: right;
+}
+
+.programe_five_slider{
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.slider_five_card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.slider_five_card .slider_card_details{
+  text-align: start;
+}
+
+.slider_card_details h2{
+  font-size: var(--h2);
+  font-family: var(--gelion-semibold);
+  color: var(--black);
+  line-height: 34px;
+}
+
+.slider_card_details p{
+  font-size: var(--h5);
+  font-family: var(--gelion-regular);
+  color: var(--about-primary-color);
+  line-height: 24px;
+  padding-top: 8px;
 }
