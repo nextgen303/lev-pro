@@ -3320,7 +3320,6 @@ text-align: right;
 /* -------------------- Section Six ------------------- */
 .section_six{
   margin-top: 12rem;
-  margin-bottom: 12rem;
 }
 
 .section_six_title h1{
@@ -3377,4 +3376,167 @@ text-align: right;
   color: var(--bg-two);
   font-family: var(--gelion-regular);
   font-weight: 200;
+}
+
+
+/*------------------------------ Section Seven ---------------------------- */
+.section_seven{
+  margin-top: 12rem;
+}
+
+.secion_seven_title h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  text-align: right;
+  color: #FC535C;
+}
+
+.program_seven_cards{
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.slider_seven_card{
+  width: 316px;
+  height: 357px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 3rem 1.4rem;
+}
+
+.slider_seven_card .program_seven__image{
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+.slider_seven_card .program_seven__image img{
+  height: 65px;
+  width: 65px;
+}
+
+.program_seven_titles h3{
+  font-size: 24px;
+  font-family: var(--gelion-regular);
+  font-weight: 400;
+}
+
+.program_seven_titles h5{
+  font-size: 18px;
+  font-family: var(--gelion-regular);
+  font-weight: 200;
+  line-height: 24px;
+  color: var(--about-primary-color);
+  padding-top: 0.5rem;
+}
+
+.section_seven_end p{
+  width: 24%;
+  font-size: 18px;
+  font-family: var(--gelion-regular);
+  font-weight: 200;
+  line-height: 24px;
+  color: var(--about-primary-color);
+}
+
+
+.program_tour_images {
+  background-color: transparent;
+  padding-top: 10rem;
+  z-index: -9;
+}
+
+.images-content .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  padding: 0 4px;
+  min-width: 600px;
+}
+
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ----------------------- About Section Seven / Gardinets Image --------------------- */
+
+.gardinets_image_seven {
+  height: 890px;
+  padding: 2rem 0;
+  margin-top: -50rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.gardients_seven {
+  position: absolute;
+  width: 100%;
+}
+
+/* ----------------------- About Section Eight / All Image --------------------- */
+.seven_all_images {
+  background: #F7F7F8;
+  width: 100%;
+  z-index: 90;
+  padding-top: -40;
+}
+
+.seven_images_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.4rem;
+  padding: 3rem 0;
+}
+
+.seven_images_content .btn_one {
+  width: 180px;
+  padding: 16px 36px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.seven_images_content .see_all_btn {
+  width: 170px;
+  margin: 0 auto;
+  font-size: var(--p);
+  color: #0c0f11;
+  font-family: var(--gelion-regular);
+}
+
+.seven_images_content h1 {
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  color: var(--bg-two);
 }
