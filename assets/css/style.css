@@ -3288,7 +3288,6 @@ text-align: right;
 
 .programe_five_slider{
   margin-top: 5rem;
-  margin-bottom: 10rem;
 }
 
 .slider_five_card{
@@ -3315,4 +3314,67 @@ text-align: right;
   color: var(--about-primary-color);
   line-height: 24px;
   padding-top: 8px;
+}
+
+
+/* -------------------- Section Six ------------------- */
+.section_six{
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.section_six_title h1{
+  font-size: 74px;
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  color: var(--bg-two);
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.color_text{
+  color: var(--footer-bg);
+}
+
+.section_six_items{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.section_six_card{
+  width: 30%;
+}
+
+.rounded{
+  border: 1px solid var(--footer-bg);
+  border-radius: 100px;
+  text-align: center;
+  padding: 24px 12px;
+}
+
+.rounded_bottom_right{
+  border: 1px solid var(--footer-bg);
+  border-radius: 100px 100px 0px 100px;
+  text-align: center;
+  padding: 24px 12px;
+}
+
+.rounded_top_left{
+  border: 1px solid var(--footer-bg);
+  border-radius: 0px 100px 100px 100px;
+  text-align: center;
+  padding: 24px 12px;
+}
+
+.section_six_items h2{
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--bg-two);
+  font-family: var(--gelion-regular);
+  font-weight: 200;
 }
