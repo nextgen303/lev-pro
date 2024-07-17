@@ -2947,8 +2947,8 @@ input[type="number"]::placeholder {
 }
 
 /* ---------------------------- Programe Page Start ----------------------- */
-.programe_page{
-  background: #F7F7F8;
+.programe_page {
+  background: #f7f7f8;
 }
 
 .programe_content {
@@ -3136,8 +3136,7 @@ input[type="number"]::placeholder {
 
 .slider,
 .programe_four_slider,
-.programe_five_slider
- {
+.programe_five_slider {
   width: 150%;
 }
 
@@ -3191,7 +3190,7 @@ input[type="number"]::placeholder {
   color: var(--black);
 }
 
-.program_four{
+.program_four {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -3219,7 +3218,7 @@ input[type="number"]::placeholder {
   padding: 3rem;
 }
 
-.slider_four_card{
+.slider_four_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3228,33 +3227,32 @@ input[type="number"]::placeholder {
   margin-bottom: 10rem;
 }
 
-.slider_four_card .slider_top_img{
+.slider_four_card .slider_top_img {
   height: 314px;
   width: 314px;
 }
 
-.slider_four_card .slider_top_img img{
+.slider_four_card .slider_top_img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.slider_four_card .slider_card_details{
+.slider_four_card .slider_card_details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
 }
 
-.slider_four_card .slider_card_details h1{
+.slider_four_card .slider_card_details h1 {
   font-size: 48px;
   font-family: var(--gelion-black);
   line-height: 48px;
   color: var(--about-primary-color);
 }
 
-
-.slider_four_card .slider_card_details p{
+.slider_four_card .slider_card_details p {
   text-align: left;
   color: var(--about-primary-color);
   font-size: var(--h5);
@@ -3262,13 +3260,13 @@ input[type="number"]::placeholder {
   font-family: var(--gelion-regular);
 }
 
-.program_five{
+.program_five {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.program_five_title p{
+.program_five_title p {
   width: 100%;
   text-align: left;
   font-size: var(--p);
@@ -3277,38 +3275,38 @@ input[type="number"]::placeholder {
   width: 76%;
 }
 
-.programe_five_subtitle h1{
+.programe_five_subtitle h1 {
   margin-top: 7rem;
-color: var(--bg-two);
-font-size: var(--h1);
-line-height: 65px;
-font-family: var(--gelion-black);
-text-align: right;
+  color: var(--bg-two);
+  font-size: var(--h1);
+  line-height: 65px;
+  font-family: var(--gelion-black);
+  text-align: right;
 }
 
-.programe_five_slider{
+.programe_five_slider {
   margin-top: 5rem;
 }
 
-.slider_five_card{
+.slider_five_card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.6rem;
 }
 
-.slider_five_card .slider_card_details{
+.slider_five_card .slider_card_details {
   text-align: start;
 }
 
-.slider_card_details h2{
+.slider_card_details h2 {
   font-size: var(--h2);
   font-family: var(--gelion-semibold);
   color: var(--black);
   line-height: 34px;
 }
 
-.slider_card_details p{
+.slider_card_details p {
   font-size: var(--h5);
   font-family: var(--gelion-regular);
   color: var(--about-primary-color);
@@ -3316,13 +3314,12 @@ text-align: right;
   padding-top: 8px;
 }
 
-
 /* -------------------- Section Six ------------------- */
-.section_six{
+.section_six {
   margin-top: 12rem;
 }
 
-.section_six_title h1{
+.section_six_title h1 {
   font-size: 74px;
   font-family: var(--gelion-black);
   line-height: 65px;
@@ -3332,11 +3329,11 @@ text-align: right;
   margin: 0 auto;
 }
 
-.color_text{
+.color_text {
   color: var(--footer-bg);
 }
 
-.section_six_items{
+.section_six_items {
   margin-top: 3rem;
   display: flex;
   align-items: center;
@@ -3345,32 +3342,32 @@ text-align: right;
   gap: 2rem;
 }
 
-.section_six_card{
+.section_six_card {
   width: 30%;
 }
 
-.rounded{
+.rounded {
   border: 1px solid var(--footer-bg);
   border-radius: 100px;
   text-align: center;
   padding: 24px 12px;
 }
 
-.rounded_bottom_right{
+.rounded_bottom_right {
   border: 1px solid var(--footer-bg);
   border-radius: 100px 100px 0px 100px;
   text-align: center;
   padding: 24px 12px;
 }
 
-.rounded_top_left{
+.rounded_top_left {
   border: 1px solid var(--footer-bg);
   border-radius: 0px 100px 100px 100px;
   text-align: center;
   padding: 24px 12px;
 }
 
-.section_six_items h2{
+.section_six_items h2 {
   font-size: 32px;
   line-height: 32px;
   color: var(--bg-two);
@@ -3378,25 +3375,24 @@ text-align: right;
   font-weight: 200;
 }
 
-
 /*------------------------------ Section Seven ---------------------------- */
-.section_seven{
+.section_seven {
   margin-top: 12rem;
 }
 
-.secion_seven_title h1{
+.secion_seven_title h1 {
   font-size: var(--h1);
   font-family: var(--gelion-black);
   text-align: right;
-  color: #FC535C;
+  color: #fc535c;
 }
 
-.program_seven_cards{
+.program_seven_cards {
   margin-top: 4rem;
   margin-bottom: 5rem;
 }
 
-.slider_seven_card{
+.slider_seven_card {
   width: 316px;
   height: 357px;
   background: #fff;
@@ -3408,22 +3404,22 @@ text-align: right;
   padding: 3rem 1.4rem;
 }
 
-.slider_seven_card .program_seven__image{
+.slider_seven_card .program_seven__image {
   padding-top: 3rem;
   padding-bottom: 6rem;
 }
-.slider_seven_card .program_seven__image img{
+.slider_seven_card .program_seven__image img {
   height: 65px;
   width: 65px;
 }
 
-.program_seven_titles h3{
+.program_seven_titles h3 {
   font-size: 24px;
   font-family: var(--gelion-regular);
   font-weight: 400;
 }
 
-.program_seven_titles h5{
+.program_seven_titles h5 {
   font-size: 18px;
   font-family: var(--gelion-regular);
   font-weight: 200;
@@ -3432,7 +3428,7 @@ text-align: right;
   padding-top: 0.5rem;
 }
 
-.section_seven_end p{
+.section_seven_end p {
   width: 24%;
   font-size: 18px;
   font-family: var(--gelion-regular);
@@ -3440,7 +3436,6 @@ text-align: right;
   line-height: 24px;
   color: var(--about-primary-color);
 }
-
 
 .program_tour_images {
   background-color: transparent;
@@ -3504,7 +3499,7 @@ text-align: right;
 
 /* ----------------------- About Section Eight / All Image --------------------- */
 .seven_all_images {
-  background: #F7F7F8;
+  background: #f7f7f8;
   width: 100%;
   z-index: 90;
   padding-top: -40;
@@ -3539,4 +3534,62 @@ text-align: right;
   font-family: var(--gelion-black);
   line-height: 65px;
   color: var(--bg-two);
+}
+
+/* -------------------- Section Eight -------------------- */
+.section_eight {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.eight_title h1 {
+  font-size: 74px;
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  color: var(--bg-two);
+  width: 70%;
+  margin-bottom: 5rem;
+}
+
+.eight_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.eight_card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 43%;
+
+}
+
+.eight_card .card_image {
+  height: 120px;
+  width: 120px;
+}
+
+.eight_card .card_titles{
+margin-top: 0.2rem;
+}
+
+.eight_card .card_titles h3 {
+  font-size: 32px;
+  font-family: var(--gelion-regular);
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--bg-two);
+  width: 80%;
+}
+
+.eight_card .card_titles p {
+  padding-top: 1.3rem;
+  font-size: var(--h5);
+  font-family: var(--gelion-regular);
+  line-height: 24px;
+  color: var(--about-primary-color);
 }
