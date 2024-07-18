@@ -495,8 +495,6 @@ let programFourCards = new Swiper(".programs_four_card", {
   },
 });
 
-
-
 /*=============== Slider ===============*/
 let programFiveCards = new Swiper(".programs_five_card", {
   loop: true,
@@ -553,8 +551,6 @@ let programFiveCards = new Swiper(".programs_five_card", {
   },
 });
 
-
-
 /*=============== Slider ===============*/
 let programSevenCards = new Swiper(".programs_seven_card", {
   loop: true,
@@ -609,4 +605,44 @@ let programSevenCards = new Swiper(".programs_seven_card", {
       slidesPerView: 4.5,
     },
   },
+});
+
+// FAQ
+document.addEventListener("DOMContentLoaded", function () {
+  const firstFaqItem = document.querySelector(".faq-item");
+  if (firstFaqItem) {
+    firstFaqItem.querySelector(".faq-answer").style.maxHeight =
+      firstFaqItem.querySelector(".faq-answer").scrollHeight + "px";
+  }
+});
+
+function toggleFAQ(element) {
+  const faqItem = element.parentElement;
+  const isActive = faqItem.classList.contains("active");
+  const allFaqItems = document.querySelectorAll(".faq-item");
+
+  allFaqItems.forEach((item) => {
+    item.classList.remove("active");
+    item.querySelector(".faq-answer").style.maxHeight = null;
+  });
+
+  if (!isActive) {
+    faqItem.classList.add("active");
+    faqItem.querySelector(".faq-answer").style.maxHeight =
+      faqItem.querySelector(".faq-answer").scrollHeight + "px";
+  }
+}
+
+// Pagination
+
+document.addEventListener("DOMContentLoaded", function() {
+  const paginationLinks = document.querySelectorAll('.page-link');
+
+  paginationLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('.page-item.active').classList.remove('active');
+          this.parentElement.classList.add('active');
+      });
+  });
 });
