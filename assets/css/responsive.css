@@ -33,54 +33,11 @@
   .title {
     font-size: var(--link);
     position: absolute;
-    left: 36%;
     display: flex;
     flex-direction: column;
     gap: 25px;
     color: #002d2d;
   }
-
-  /* .images .top_one {
-    left: 39%;
-    top: 2rem;
-    width: 274px;
-    height: 327px;
-  }
-
-  .images .top_two {
-    right: 39%;
-    top: 1rem;
-    width: 346px;
-    height: 343px;
-  }
-
-  .images .center_two {
-    right: 35%;
-    top: 36%;
-    width: 256px;
-    height: 289px;
-  }
-
-  .images .center_one {
-    left: 35%;
-    top: 40%;
-    width: 336px;
-    height: 322px;
-  }
-
-  .images .bottom_one {
-    bottom: 0;
-    left: 39%;
-    width: 336px;
-    height: 220px;
-  }
-
-  .images .bottom_two {
-    right: 39%;
-    bottom: 0;
-    width: 317px;
-    height: 327px;
-  } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -1290,15 +1247,15 @@
 
   .mission_top .small_title,
   .mission_top .large_title,
-  .small_title .mission-article{
+  .small_title .mission-article {
     width: 100%;
   }
 
-  .small_title .mission-article p{
+  .small_title .mission-article p {
     width: 50%;
   }
-  
-  .small_title .mission-article article{
+
+  .small_title .mission-article article {
     width: 50%;
   }
 
@@ -1318,12 +1275,12 @@
     padding-top: 1rem;
   }
 
-  .mission_bottom{
+  .mission_bottom {
     margin-top: 2rem;
     gap: 1rem;
   }
 
-  .mission__list-box{
+  .mission__list-box {
     width: 43%;
   }
 
@@ -1485,14 +1442,13 @@
 
   .contact_right_top img {
     margin-top: 1rem;
-}
+  }
 
   .location_bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 3.5rem;
   }
-
 }
 
 @media screen and (max-width: 450px) {
@@ -1603,12 +1559,10 @@
     margin-bottom: 1rem;
   }
 
-  
   /* --------------- Mission --------------- */
-  .mission__list-box{
+  .mission__list-box {
     width: 95%;
   }
-
 }
 
 @media screen and (max-width: 380px) {
@@ -1621,32 +1575,31 @@
     margin-top: 10rem;
   }
 
-    /* ------------------------ Contact page Start --------------------- */
+  /* ------------------------ Contact page Start --------------------- */
 
-    .contact_right_bottom {
-      bottom: -22rem;
-      margin-right: 0.7rem;
-      width: 95%;
-      height: auto;
-      padding: 2rem 1rem;
-    }
-  
-    .contact_right_top img {
-      margin-top: 1rem;
+  .contact_right_bottom {
+    bottom: -22rem;
+    margin-right: 0.7rem;
+    width: 95%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .contact_right_top img {
+    margin-top: 1rem;
   }
 }
 
 @media screen and (max-height: 680px) {
+  /* ------------------------ Contact page Start --------------------- */
+  .contact_right_bottom {
+    bottom: -32rem;
+    margin-right: 0.7rem;
+    width: 95%;
+    height: auto;
+  }
 
-    /* ------------------------ Contact page Start --------------------- */
-    .contact_right_bottom {
-      bottom: -32rem;
-      margin-right: 0.7rem;
-      width: 95%;
-      height: auto;
-    }
-  
-    .contact_right_top img {
-      margin-top: 1rem;
+  .contact_right_top img {
+    margin-top: 1rem;
   }
 }
