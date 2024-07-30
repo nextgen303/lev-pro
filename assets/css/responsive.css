@@ -310,6 +310,36 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .program_one,
+  .program_two,
+  .program_three,
+  .program_four,
+  .program_five,
+  .section_six,
+  .section_seven,
+  .section_seven_end,
+  .section_eight,
+  .faq_content,
+  .program_container {
+    padding: 0 1rem;
+  }
+
+  .program_three h1 {
+    font-size: var(--h1);
+    line-height: 65px;
+  }
+
+  .title_two h2 {
+    width: 90%;
+  }
+
+  .rounded_image {
+    height: 100%;
+    padding: 3rem;
+  }
+}
+
 @media screen and (max-width: 880px) {
   .stroke_text {
     font-size: 50px;
@@ -460,7 +490,6 @@
 
   .footer {
     padding: 2.5rem 0;
-    height: 85vh;
   }
 
   .footer_content {
@@ -1395,6 +1424,181 @@
     height: 608px;
     width: 95%;
   }
+
+  /* ------------ Program Page Start ------------------- */
+
+  .programe_title {
+    padding-top: 7rem;
+  }
+
+  .programe_content {
+    height: 360px;
+  }
+
+  .main_bg {
+    height: 500px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -11rem;
+    z-index: 99;
+  }
+
+  .main_bg a {
+    margin-top: -1rem;
+  }
+
+  .programe_title h1 {
+    font-size: 34px;
+  }
+
+  .programe_title h5 {
+    font-size: 16px;
+  }
+
+  .title_two {
+    margin-top: -7rem;
+  }
+
+  .title_two {
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .title_two h2 {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .program_one {
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .program_title h1 {
+    font-size: var(--h2);
+    line-height: 34px;
+    width: 90%;
+  }
+
+  .programe_details {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .programe_details p,
+  .program_title h5 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .programe_one_img {
+    padding-top: 3rem;
+  }
+
+  .program_two {
+    padding-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .program_title {
+    text-align: center;
+  }
+
+  .programe_two {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .rounded_image {
+    background: url("/assets/images/programe/Mask\ Group\ 2691.png");
+    width: 100%;
+    height: 888px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    margin-top: 150px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 150px;
+    padding-right: 3rem;
+    position: relative;
+  }
+
+  .rounded_content {
+    height: 250px;
+    width: 250px;
+  }
+
+  .rounded_content h3 {
+    font-size: 20px;
+    line-height: 20px;
+    width: 80%;
+  }
+
+  .rounded_content h6 {
+    font-size: 16px;
+    line-height: 16px;
+    width: 90%;
+  }
+
+  .program_three h1 {
+    font-size: 34px;
+    line-height: 34px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .program_three p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .slider_three_card {
+    height: auto;
+    max-width: 316px;
+    width: 314px;
+  }
+
+  .slider_three_card .program_three__image {
+    height: 454px;
+    max-width: 316px;
+    width: 316px;
+  }
+
+  .program_four{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .program_four .program_title h1 {
+    position: relative;
+    width: 100%;
+  }
+
+  .program_four .programe_details {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .slider_four_card {
+    height: 436px;
+    max-width: 314px;
+    background: #fff;
+    padding: 3rem;
+  }
+  
+
 }
 
 @media screen and (max-width: 550px) {

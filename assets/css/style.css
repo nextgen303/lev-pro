@@ -1633,7 +1633,7 @@ header .btn {
 
 .footer {
   padding: 2.5rem 0;
-  height: 70vh;
+  height: 100%;
   width: 100%;
   background-color: var(--footer-bg);
   position: relative;
@@ -3092,10 +3092,14 @@ input[type="number"]::placeholder {
 }
 
 .programe_title h5 {
-  font-size: var(--fs-5);
+  font-size: var(--h5);
   font-family: var(--gelion-semibold);
   color: #0c0f11;
   text-transform: uppercase;
+}
+
+.programe_title .text-bluw {
+  color: var(--bg-two);
 }
 
 .programe_title h1 {
@@ -3113,7 +3117,7 @@ input[type="number"]::placeholder {
 
 .title_two h5 {
   color: #7abaff;
-  font-size: var(--fs-5);
+  font-size: var(--h5);
   font-family: var(--gelion-regular);
   line-height: 32px;
 }
@@ -3195,7 +3199,8 @@ input[type="number"]::placeholder {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 384px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-top: 10rem;
   margin-bottom: 12rem;
   display: flex;
@@ -3705,19 +3710,20 @@ input[type="number"]::placeholder {
   overflow: hidden;
 }
 
-.showcase_part{
+.showcase_part {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
-.showcase_heading_left h1{
+.showcase_heading_left h1 {
   font-size: var(--h1);
   line-height: 65px;
   font-family: var(--gelion-black);
   width: 80%;
   color: var(--bg-two);
+  z-index: 99 !important;
 }
 
 .showcase-content_two {
@@ -3726,6 +3732,7 @@ input[type="number"]::placeholder {
   justify-content: center;
   margin: 0 auto;
   width: 100%;
+  z-index: 99;
 }
 
 .showcase_part_right {
@@ -3795,7 +3802,6 @@ input[type="number"]::placeholder {
   color: #fc535c;
   mix-blend-mode: difference;
 }
-
 
 .images .top_one,
 .images .top_two,
@@ -4717,7 +4723,7 @@ input[type="number"]::placeholder {
   margin-top: -1rem;
 }
 
-.releted_program_main .releted_card__container .card__article{
+.releted_program_main .releted_card__container .card__article {
   width: 100%;
 }
 

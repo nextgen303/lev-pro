@@ -405,8 +405,12 @@ let programThreeCards = new Swiper(".programs_three_card", {
       slidesPerView: 1.2,
     },
 
+    500: {
+      slidesPerView: 2.1,
+    },
+
     600: {
-      slidesPerView: 1.6,
+      slidesPerView: 2.5,
     },
 
     708: {
