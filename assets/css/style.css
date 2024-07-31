@@ -3406,8 +3406,6 @@ input[type="number"]::placeholder {
   gap: 1.6rem;
 }
 
-
-
 .slider_five_card .slider_card_details {
   text-align: start;
 }
@@ -3521,6 +3519,7 @@ input[type="number"]::placeholder {
   padding-top: 3rem;
   padding-bottom: 6rem;
 }
+
 .slider_seven_card .program_seven__image img {
   height: 65px;
   width: 65px;
@@ -3550,7 +3549,7 @@ input[type="number"]::placeholder {
   color: var(--about-primary-color);
 }
 
-.pc_hidden_p{
+.pc_hidden_p {
   display: none;
   width: 24%;
   font-size: 18px;

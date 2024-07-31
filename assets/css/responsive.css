@@ -1558,8 +1558,7 @@
   }
 
   .program_three h1,
-  .section_six_title h1
-  {
+  .section_six_title h1 {
     font-size: 34px;
     line-height: 34px;
     width: 100%;
@@ -1653,13 +1652,55 @@
     text-align: center;
   }
 
-  .slider_five_card  .slider_top_img{
+  .slider_five_card .slider_top_img {
     max-width: 315px;
     height: 220px;
   }
 
   .section_six_card {
     width: 80%;
+  }
+
+  .pc_hidden_p {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .secion_seven_title h1 {
+    text-align: center;
+  }
+
+  .section_seven_end p {
+    display: none;
+  }
+
+  .program_image_showcase {
+    height: 900px;
+  }
+
+  .eight_title h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .eight_card {
+    width: 100%;
+  }
+  .showcase_part {
+    flex-direction: column;
+  }
+
+  .showcase_part_right {
+    display: none;
+  }
+
+  .showcase_heading_left h1 {
+    font-size: 34px;
+    line-height: 34px;
+    width: 100%;
   }
 }
 
@@ -1830,7 +1871,7 @@
     width: 95%;
   }
 
- .section_six_card {
+  .section_six_card {
     width: 100%;
   }
 }
