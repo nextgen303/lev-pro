@@ -401,16 +401,21 @@ let programThreeCards = new Swiper(".programs_three_card", {
   },
 
   breakpoints: {
+
+    300: {
+      slidesPerView: 1,
+    },
+
     400: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
     },
 
     500: {
-      slidesPerView: 2.1,
+      slidesPerView: 1.3,
     },
 
     600: {
-      slidesPerView: 2.5,
+      slidesPerView: 1.7,
     },
 
     708: {
@@ -639,14 +644,14 @@ function toggleFAQ(element) {
 
 // Pagination
 
-document.addEventListener("DOMContentLoaded", function() {
-  const paginationLinks = document.querySelectorAll('.page-link');
+document.addEventListener("DOMContentLoaded", function () {
+  const paginationLinks = document.querySelectorAll(".page-link");
 
-  paginationLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-          event.preventDefault();
-          document.querySelector('.page-item.active').classList.remove('active');
-          this.parentElement.classList.add('active');
-      });
+  paginationLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      document.querySelector(".page-item.active").classList.remove("active");
+      this.parentElement.classList.add("active");
+    });
   });
 });

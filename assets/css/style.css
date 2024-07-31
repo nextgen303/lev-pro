@@ -3379,6 +3379,11 @@ input[type="number"]::placeholder {
   line-height: 24px;
   color: var(--about-primary-color);
   width: 76%;
+  order: 2;
+}
+
+.p_hidden {
+  display: none;
 }
 
 .programe_five_subtitle h1 {
@@ -3400,6 +3405,8 @@ input[type="number"]::placeholder {
   align-items: flex-start;
   gap: 1.6rem;
 }
+
+
 
 .slider_five_card .slider_card_details {
   text-align: start;
@@ -3535,6 +3542,16 @@ input[type="number"]::placeholder {
 }
 
 .section_seven_end p {
+  width: 24%;
+  font-size: 18px;
+  font-family: var(--gelion-regular);
+  font-weight: 200;
+  line-height: 24px;
+  color: var(--about-primary-color);
+}
+
+.pc_hidden_p{
+  display: none;
   width: 24%;
   font-size: 18px;
   font-family: var(--gelion-regular);

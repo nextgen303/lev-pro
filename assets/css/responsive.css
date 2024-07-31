@@ -1551,17 +1551,25 @@
     width: 90%;
   }
 
-  .program_three h1 {
+  .slider,
+  .programe_four_slider,
+  .programe_five_slider {
+    width: 100%;
+  }
+
+  .program_three h1,
+  .section_six_title h1
+  {
     font-size: 34px;
     line-height: 34px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
 
   .program_three p {
     width: 100%;
-    text-align: left;
+    text-align: start;
   }
 
   .slider_three_card {
@@ -1576,7 +1584,7 @@
     width: 316px;
   }
 
-  .program_four{
+  .program_four {
     align-items: center;
     justify-content: center;
   }
@@ -1597,8 +1605,62 @@
     background: #fff;
     padding: 3rem;
   }
-  
 
+  .slider_four_card {
+    gap: 1rem;
+    margin-bottom: 6rem;
+  }
+
+  .slider_four_card .slider_top_img {
+    height: 204px;
+    width: 204px;
+  }
+
+  .slider_four_card .slider_card_details h1 {
+    font-size: 30px;
+  }
+
+  .slider_four_card .slider_card_details p {
+    font-size: 16px;
+  }
+
+  .program_five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .program_five_title p {
+    width: 100%;
+    font-size: var(--p);
+    line-height: 24px;
+    width: 95%;
+    order: 1;
+    text-align: center;
+  }
+
+  .programe_five_subtitle h1 {
+    display: none;
+  }
+
+  .p_hidden {
+    display: flex;
+    color: var(--bg-two);
+    font-family: var(--gelion-black);
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .slider_five_card  .slider_top_img{
+    max-width: 315px;
+    height: 220px;
+  }
+
+  .section_six_card {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1766,6 +1828,10 @@
   /* --------------- Mission --------------- */
   .mission__list-box {
     width: 95%;
+  }
+
+ .section_six_card {
+    width: 100%;
   }
 }
 
