@@ -5002,6 +5002,8 @@ textarea.error {
 
 .plus_up {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -5037,3 +5039,12 @@ textarea.error {
   cursor: pointer;
 }
 
+.remove-icon {
+  position: absolute;
+  top: -3px;
+  right: 2px;
+  font-size: 22px;
+  color: red;
+  cursor: pointer;
+  display: none; 
+}
