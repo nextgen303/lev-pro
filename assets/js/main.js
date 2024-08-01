@@ -401,7 +401,6 @@ let programThreeCards = new Swiper(".programs_three_card", {
   },
 
   breakpoints: {
-
     300: {
       slidesPerView: 1,
     },
