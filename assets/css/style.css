@@ -4707,6 +4707,7 @@ input[type="number"]::placeholder {
   background-color: var(--program-theme);
   padding-top: 7rem;
   padding-bottom: 2rem;
+  position: relative;
 }
 
 .releted_program_title h1 {
@@ -4759,6 +4760,7 @@ input[type="number"]::placeholder {
   background-color: #fc535c;
 }
 /* Modal styles */
+
 .modal {
   display: none;
   position: fixed;
@@ -4772,6 +4774,7 @@ input[type="number"]::placeholder {
   padding-top: 60px;
   z-index: 99;
   padding: 3rem 6rem;
+  z-index: 9099;
 }
 
 .modal-content {

@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/apply.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
@@ -213,7 +214,7 @@
                     </div>
 
                     <div class="apply_buttons">
-                      <a class="btn-1" href="">Apply</a>
+                      <a class="btn-1" onclick="showPopup()">Apply</a>
 
                       <a class="btn-2" href="">More</a>
                     </div>
@@ -255,7 +256,7 @@
                     </div>
 
                     <div class="apply_buttons">
-                      <a class="btn-1" href="">Apply</a>
+                      <a class="btn-1" onclick="showPopup()">Apply</a>
 
                       <a class="btn-2" href="">More</a>
                     </div>
@@ -297,7 +298,7 @@
                     </div>
 
                     <div class="apply_buttons">
-                      <a class="btn-1" href="">Apply</a>
+                      <a class="btn-1" onclick="showPopup()">Apply</a>
 
                       <a class="btn-2" href="">More</a>
                     </div>
@@ -339,7 +340,7 @@
                     </div>
 
                     <div class="apply_buttons">
-                      <a class="btn-1" href="">Apply</a>
+                      <a class="btn-1" onclick="showPopup()">Apply</a>
 
                       <a class="btn-2" href="">More</a>
                     </div>
@@ -376,43 +377,110 @@
             <a href="all-programs.html" class="all_program_btn">View All</a>
           </div>
         </div>
+
+        <div class="popup_form" id="popupForm">
+          <div class="popup_content">
+            <div class="popup_header">
+              <img
+                src="assets/images/join_team/Group 4.png"
+                alt="Logo"
+                class="popup_logo"
+              />
+  
+        
+              <span class="close_btn" onclick="closePopup()">
+                <i class="fa-solid fa-xmark"></i
+              ></span>
+            </div>
+  
+            <div class="popup_titles">
+              <h1>suggest new opportunities</h1>
+              <p>
+                Identifying unmet needs or gaps in a field where you can offer a
+                solution or service.
+              </p>
+            </div>
+            <form>
+              <div class="input_feild">
+                <p>Name</p>
+                <input placeholder="Name" name="fname" required />
+              </div>
+  
+              <div class="input_feild">
+                <p>Phone Number</p>
+                <input type="tel" placeholder="Phone Number" required />
+              </div>
+  
+              <div class="input_feild">
+                <p>Email</p>
+                <input type="email" placeholder="Email" required />
+              </div>
+  
+              <select required>
+                <option value="" disabled selected>Select Major</option>
+                <option value="cs">Computer Science</option>
+                <option value="design">Design</option>
+                <!-- Add more options as needed -->
+              </select>
+              <select required>
+                <option value="" disabled selected>Select Country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <!-- Add more options as needed -->
+              </select>
+            <div class="apply-form_bottom">
+              <div class="checkbox_container">
+                <input type="checkbox" id="subscribe" required />
+                <label for="subscribe" 
+                  >Stay informed and take control of your future. Subscribe now
+                  and receive updates on exciting new opportunities in your
+                  field!</label
+                >
+              </div>
+              <button type="submit">Apply</button>
+            </div>
+            </form>
+          </div>
+        </div>
+  
       </div>
 
-   <div class="releted_program_main">
-    <div class="releted_card__container">
-        <article class="card__article">
-          <div class="program_card__image">
-            <img src="assets/images/home/programe-1.png" alt="image" />
+      <div class="releted_program_main">
+        <div class="releted_card__container">
+          <article class="card__article">
+            <div class="program_card__image">
+              <img src="assets/images/home/programe-1.png" alt="image" />
 
-            <h3 class="programe_name">Study & Travel</h3>
-          </div>
-        </article>
+              <h3 class="programe_name">Study & Travel</h3>
+            </div>
+          </article>
 
-        <article class="card__article ">
-          <div class="program_card__image">
-            <img src="assets/images/home/programe-2.png" alt="image" />
+          <article class="card__article">
+            <div class="program_card__image">
+              <img src="assets/images/home/programe-2.png" alt="image" />
 
-            <h3 class="programe_name">Work & Travel</h3>
-          </div>
-        </article>
+              <h3 class="programe_name">Work & Travel</h3>
+            </div>
+          </article>
 
-        <article class="card__article ">
-          <div class="program_card__image">
-            <img src="assets/images/home/programe-3.png" alt="image" />
+          <article class="card__article">
+            <div class="program_card__image">
+              <img src="assets/images/home/programe-3.png" alt="image" />
 
-            <h3 class="programe_name">Internship</h3>
-          </div>
-        </article>
+              <h3 class="programe_name">Internship</h3>
+            </div>
+          </article>
 
-        <article class="card__article ">
-          <div class="program_card__image">
-            <img src="assets/images/home/programe-4.png" alt="image" />
+          <article class="card__article">
+            <div class="program_card__image">
+              <img src="assets/images/home/programe-4.png" alt="image" />
 
-            <h3 class="programe_name">Counselor</h3>
-          </div>
-        </article>
+              <h3 class="programe_name">Counselor</h3>
+            </div>
+          </article>
+        </div>
       </div>
-   </div>
+
 
       <div class="footer_top_img"></div>
 
