@@ -140,14 +140,16 @@
 .popup_content form {
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
 }
 
 .popup_content form input,
 .popup_content form select {
-  margin: 10px 0;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  margin: 10px 0;
 }
 
 .apply-form_bottom {
@@ -179,6 +181,14 @@
   margin-right: 10px;
 }
 
+
+#majorInput {
+  outline: none;
+  border: none;
+  padding-top: 0;
+}
+
+
 .popup_content form button {
   padding: 10px;
   border: none;
@@ -188,4 +198,58 @@
   font-size: 14px;
   font-family: var(--gelion-black);
   text-transform: uppercase;
+}
+
+.tag_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.tag .remove_tag {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 660px) {
+    .popup_form{
+        padding: 1rem;
+    }
+
+    .popup_logo {
+        width: 120px;
+      }
+      
+      .close_btn i {
+        font-size: 22px;
+      }
+      
+
+    .popup_titles h1{
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .popup_titles p{
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .popup_form{
+        padding: 1rem;
+    }
 }

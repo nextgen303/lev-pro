@@ -657,10 +657,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 function showPopup() {
-  document.getElementById('popupForm').style.display = 'flex';
+    document.getElementById('popupForm').style.display = 'flex';
+
+    
+    
+
+    // Pre-populate the major input field with three predefined categories
+    const predefinedMajors = ['Computer Science', 'Design', 'Graphic Design'];
+    predefinedMajors.forEach(major => addTag(major));
 }
 
 function closePopup() {
-  document.getElementById('popupForm').style.display = 'none';
+    document.getElementById('popupForm').style.display = 'none';
+    
+    // Clear the tags when the popup is closed
+    const tags = document.querySelectorAll('.tag');
+    tags.forEach(tag => tag.remove());
+}
+
+const majorInput = document.getElementById('majorInput');
+const tagContainer = document.querySelector('.tag_container');
+
+majorInput.addEventListener('change', function() {
+    const selectedMajor = majorInput.value;
+    if (selectedMajor) {
+        addTag(selectedMajor);
+        majorInput.value = '';
+    }
+});
+
+function addTag(text) {
+    // Check if the tag already exists
+    const existingTags = Array.from(tagContainer.children).map(tag => tag.textContent.replace('×', '').trim());
+    if (existingTags.includes(text)) return;
+
+    const tag = document.createElement('div');
+    tag.className = 'tag';
+    tag.innerText = text;
+
+    const removeButton = document.createElement('span');
+    removeButton.className = 'remove_tag';
+    removeButton.innerHTML = '&times;';
+    removeButton.onclick = function() {
+        tag.remove();
+    };
+
+    tag.appendChild(removeButton);
+    tagContainer.appendChild(tag);
 }

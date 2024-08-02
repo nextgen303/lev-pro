@@ -386,13 +386,12 @@
                 alt="Logo"
                 class="popup_logo"
               />
-  
-        
+
               <span class="close_btn" onclick="closePopup()">
                 <i class="fa-solid fa-xmark"></i
               ></span>
             </div>
-  
+
             <div class="popup_titles">
               <h1>suggest new opportunities</h1>
               <p>
@@ -405,44 +404,53 @@
                 <p>Name</p>
                 <input placeholder="Name" name="fname" required />
               </div>
-  
+
               <div class="input_feild">
                 <p>Phone Number</p>
                 <input type="tel" placeholder="Phone Number" required />
               </div>
-  
+
               <div class="input_feild">
                 <p>Email</p>
                 <input type="email" placeholder="Email" required />
               </div>
-  
-              <select required>
-                <option value="" disabled selected>Select Major</option>
-                <option value="cs">Computer Science</option>
-                <option value="design">Design</option>
-                <!-- Add more options as needed -->
-              </select>
-              <select required>
-                <option value="" disabled selected>Select Country</option>
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-                <!-- Add more options as needed -->
-              </select>
-            <div class="apply-form_bottom">
-              <div class="checkbox_container">
-                <input type="checkbox" id="subscribe" required />
-                <label for="subscribe" 
-                  >Stay informed and take control of your future. Subscribe now
-                  and receive updates on exciting new opportunities in your
-                  field!</label
-                >
-              </div>
-              <button type="submit">Apply</button>
+              <div class="input_feild">
+                <p>Major</p>
+                <div class="tag_container">
+                    <input type="text" id="majorInput" placeholder="Select major" list="majors" />
+                    <datalist id="majors">
+                        <option value="Computer Science"></option>
+                        <option value="Design"></option>
+                        <option value="Graphic Design"></option>
+                        <option value="Video Editing"></option>
+                        <!-- Add more options as needed -->
+                    </datalist>
+                </div>
             </div>
+          
+              <div class="input_feild">
+                <p>Country</p>
+                <select required>
+                  <option value="" disabled selected>USA</option>
+                  <option value="usa">London</option>
+                  <option value="canada">Canada</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="apply-form_bottom">
+                <div class="checkbox_container">
+                  <input type="checkbox" id="subscribe" required />
+                  <label for="subscribe"
+                    >Stay informed and take control of your future. Subscribe
+                    now and receive updates on exciting new opportunities in
+                    your field!</label
+                  >
+                </div>
+                <button type="submit">Apply</button>
+              </div>
             </form>
           </div>
         </div>
-  
       </div>
 
       <div class="releted_program_main">
@@ -480,7 +488,6 @@
           </article>
         </div>
       </div>
-
 
       <div class="footer_top_img"></div>
 
