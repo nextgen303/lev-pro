@@ -1,3 +1,90 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tabs a");
+  const blogCards = document.querySelectorAll(".blog_card");
+  const searchInput = document.querySelector(".tab_search-input");
+  const noResultMessage = document.querySelector(".no-result-message");
+
+  // Function to show or hide blog cards based on the selected category
+  const filterBlogsByCategory = (category) => {
+    let hasResults = false;
+    blogCards.forEach((card) => {
+      if (category === "all" || card.dataset.category === category) {
+        card.classList.add("show");
+        hasResults = true;
+      } else {
+        card.classList.remove("show");
+      }
+    });
+    noResultMessage.style.display = hasResults ? "none" : "block";
+  };
+
+  // Function to handle the search input
+  const handleSearch = (searchText) => {
+    searchText = searchText.toLowerCase();
+    let hasResults = false;
+    blogCards.forEach((card) => {
+      const titleElement = card.querySelector(".blog_heading_two h1");
+      const articleElement = card.querySelector(".blog_aricle p");
+      const titleText = titleElement.textContent.toLowerCase();
+      const articleText = articleElement.textContent.toLowerCase();
+
+      if (titleText.includes(searchText) || articleText.includes(searchText)) {
+        card.classList.add("show");
+        hasResults = true;
+        // Underline matched text in title and article
+        underlineMatchedText(titleElement, titleText, searchText);
+        underlineMatchedText(articleElement, articleText, searchText);
+      } else {
+        card.classList.remove("show");
+        // Reset underline if search text is empty
+        titleElement.innerHTML = titleElement.textContent;
+        articleElement.innerHTML = articleElement.textContent;
+      }
+    });
+    noResultMessage.style.display = hasResults ? "none" : "block";
+  };
+
+  // Function to underline matched text
+  const underlineMatchedText = (element, text, searchText) => {
+    const regex = new RegExp(`(${searchText})`, "gi");
+    const newText = text.replace(
+      regex,
+      '<span style="background-color: #10ff00;">$1</span>'
+    );
+    element.innerHTML = newText;
+  };
+
+  // Event listener for tab clicks
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      // Remove active class from all tabs and add to clicked tab
+      tabs.forEach((t) => t.classList.remove("blog_tab_active"));
+      tab.classList.add("blog_tab_active");
+
+      // Get the category from data attribute
+      const category = tab.dataset.tab;
+
+      // Filter blog cards based on category
+      filterBlogsByCategory(category);
+
+      // Handle search input to apply filter after tab change
+      handleSearch(searchInput.value);
+    });
+  });
+
+  // Event listener for search input
+  searchInput.addEventListener("input", () => {
+    handleSearch(searchInput.value);
+  });
+
+  // Initial load: filter by the active tab
+  const activeTab = document.querySelector(".tabs a.blog_tab_active").dataset
+    .tab;
+  filterBlogsByCategory(activeTab);
+});
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -150,93 +237,97 @@ function updateStepIndicators(n) {
   steps[n].classList.add("active");
 }
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    const dropZone = document.getElementById("dropZone");
-    const fileInput = document.getElementById("uploadPictures");
-    const uploadLink = document.getElementById("uploadLink");
-    const plusIcons = document.querySelectorAll(".plus-icon");
-    const imageFields = document.querySelectorAll(".image-field");
-  
-    // Handle file drop
-    dropZone.addEventListener("dragover", function (event) {
-      event.preventDefault();
-      dropZone.classList.add("drag-over");
-    });
-  
-    dropZone.addEventListener("dragleave", function () {
-      dropZone.classList.remove("drag-over");
-    });
-  
-    dropZone.addEventListener("drop", function (event) {
-      event.preventDefault();
-      dropZone.classList.remove("drag-over");
-      handleFiles(event.dataTransfer.files);
-    });
-  
-    // Handle file input click
-    uploadLink.addEventListener("click", function (event) {
-      event.preventDefault();
-      fileInput.click();
-    });
-  
-    fileInput.addEventListener("change", function () {
-      handleFiles(this.files);
-    });
-  
-    // Handle plus icon click
-    plusIcons.forEach(icon => {
-      icon.addEventListener("click", function () {
-        const inputId = this.getAttribute("data-input-id");
-        document.getElementById(inputId).click();
-      });
-    });
-  
-    // Handle files
-    function handleFiles(files) {
-      [...files].forEach((file, index) => {
-        if (index < imageFields.length) {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            const preview = imageFields[index].querySelector(".image-preview");
-            preview.style.backgroundImage = `url(${e.target.result})`;
-            imageFields[index].querySelector(".plus-icon").style.display = "none";
-            imageFields[index].querySelector(".remove-icon").style.display = "block";
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-    }
-  
-    // Handle individual file input changes
-    document.querySelectorAll(".upload_img_plus").forEach((input, index) => {
-      input.addEventListener("change", function () {
-        const file = this.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            const preview = document.getElementById(`preview${index + 1}`);
-            preview.style.backgroundImage = `url(${e.target.result})`;
-            document.getElementById(`imageField${index + 1}`).querySelector(".plus-icon").style.display = "none";
-            document.getElementById(`imageField${index + 1}`).querySelector(".remove-icon").style.display = "block";
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-    });
-  
-    // Handle remove icon click
-    document.querySelectorAll(".remove-icon").forEach(icon => {
-      icon.addEventListener("click", function () {
-        const inputId = this.getAttribute("data-input-id");
-        const fileInput = document.getElementById(inputId);
-        fileInput.value = ""; // Clear the file input
-        const preview = this.closest(".image-field").querySelector(".image-preview");
-        preview.style.backgroundImage = ""; // Clear the preview
-        this.style.display = "none"; // Hide the remove icon
-        this.closest(".image-field").querySelector(".plus-icon").style.display = "block"; // Show the plus icon
-      });
+  const dropZone = document.getElementById("dropZone");
+  const fileInput = document.getElementById("uploadPictures");
+  const uploadLink = document.getElementById("uploadLink");
+  const plusIcons = document.querySelectorAll(".plus-icon");
+  const imageFields = document.querySelectorAll(".image-field");
+
+  // Handle file drop
+  dropZone.addEventListener("dragover", function (event) {
+    event.preventDefault();
+    dropZone.classList.add("drag-over");
+  });
+
+  dropZone.addEventListener("dragleave", function () {
+    dropZone.classList.remove("drag-over");
+  });
+
+  dropZone.addEventListener("drop", function (event) {
+    event.preventDefault();
+    dropZone.classList.remove("drag-over");
+    handleFiles(event.dataTransfer.files);
+  });
+
+  // Handle file input click
+  uploadLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    fileInput.click();
+  });
+
+  fileInput.addEventListener("change", function () {
+    handleFiles(this.files);
+  });
+
+  // Handle plus icon click
+  plusIcons.forEach((icon) => {
+    icon.addEventListener("click", function () {
+      const inputId = this.getAttribute("data-input-id");
+      document.getElementById(inputId).click();
     });
   });
-  
+
+  // Handle files
+  function handleFiles(files) {
+    [...files].forEach((file, index) => {
+      if (index < imageFields.length) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const preview = imageFields[index].querySelector(".image-preview");
+          preview.style.backgroundImage = `url(${e.target.result})`;
+          imageFields[index].querySelector(".plus-icon").style.display = "none";
+          imageFields[index].querySelector(".remove-icon").style.display =
+            "block";
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  }
+
+  // Handle individual file input changes
+  document.querySelectorAll(".upload_img_plus").forEach((input, index) => {
+    input.addEventListener("change", function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const preview = document.getElementById(`preview${index + 1}`);
+          preview.style.backgroundImage = `url(${e.target.result})`;
+          document
+            .getElementById(`imageField${index + 1}`)
+            .querySelector(".plus-icon").style.display = "none";
+          document
+            .getElementById(`imageField${index + 1}`)
+            .querySelector(".remove-icon").style.display = "block";
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  });
+
+  // Handle remove icon click
+  document.querySelectorAll(".remove-icon").forEach((icon) => {
+    icon.addEventListener("click", function () {
+      const inputId = this.getAttribute("data-input-id");
+      const fileInput = document.getElementById(inputId);
+      fileInput.value = ""; // Clear the file input
+      const preview =
+        this.closest(".image-field").querySelector(".image-preview");
+      preview.style.backgroundImage = ""; // Clear the preview
+      this.style.display = "none"; // Hide the remove icon
+      this.closest(".image-field").querySelector(".plus-icon").style.display =
+        "block"; // Show the plus icon
+    });
+  });
+});

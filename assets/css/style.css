@@ -4956,11 +4956,11 @@ textarea.error {
   margin-top: 8px;
 }
 
-.upload_img{
+.upload_img {
   height: 201.5px;
 }
 
-.main_upload{
+.main_upload {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4994,7 +4994,6 @@ textarea.error {
 #uploadLink {
   color: var(--blog_theme);
   text-decoration: underline;
-
 }
 
 #uploadLink:hover {
@@ -5052,5 +5051,26 @@ textarea.error {
   font-size: 22px;
   color: red;
   cursor: pointer;
-  display: none; 
+  display: none;
+}
+
+.tabs a.blog_tab_active {
+  color: #88fe02;
+  font-weight: bold;
+}
+
+.blog_card {
+  display: none;
+}
+
+.blog_card.show {
+  display: block;
+}
+
+.no-result-message {
+  display: none;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
 }
