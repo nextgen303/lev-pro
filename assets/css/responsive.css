@@ -584,6 +584,9 @@
   .contact_right_bottom {
     width: 47%;
   }
+  .modal {
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1702,6 +1705,25 @@
     line-height: 34px;
     width: 100%;
   }
+  .modal-content {
+    margin: 5% auto;
+    padding: 2rem 2rem;
+  }
+
+  .modal_h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+  
+  .blog_sub {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .blog_button {
+    font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -1899,6 +1921,11 @@
   .contact_right_top img {
     margin-top: 1rem;
   }
+
+  .modal-content {
+    margin: 5% auto;
+    padding: 1rem 1rem;
+}
 }
 
 @media screen and (max-height: 680px) {
