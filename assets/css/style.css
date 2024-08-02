@@ -2916,6 +2916,7 @@ input[type="number"]::placeholder {
 .blog_tab_active {
   background-color: #fc535c;
   color: var(--white) !important;
+  cursor: pointer;
 }
 
 .all_blog_main {
@@ -4353,6 +4354,7 @@ input[type="number"]::placeholder {
   border-radius: 10px;
   font-size: 14px;
   color: var(--black);
+  cursor: pointer;
 }
 
 .tab_serach .tabs .tab_active {
@@ -5055,7 +5057,6 @@ textarea.error {
 }
 
 .tabs a.blog_tab_active {
-  color: #88fe02;
   font-weight: bold;
 }
 
