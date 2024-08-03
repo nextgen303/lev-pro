@@ -5175,6 +5175,7 @@ textarea.error {
 }
 
 .apply_content_left_cards .apply_content_left_card {
+  max-width: 317px;
   height: 332px;
   background-color: var(--white);
 }
