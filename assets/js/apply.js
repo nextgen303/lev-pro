@@ -54,5 +54,22 @@ document.getElementById("fileInputNew").addEventListener("change", function () {
 
 function handleFilesNew(files) {
   console.log("Files uploaded:", files);
-  // Add your file handling logic here
 }
+
+
+
+document.getElementById('applyBtn').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('applyPopupForm').style.display = 'flex';
+});
+
+document.getElementById('closePopupBtn').addEventListener('click', function() {
+  document.getElementById('applyPopupForm').style.display = 'none';
+});
+
+// Optional: Close the popup when clicking outside of the form
+window.addEventListener('click', function(event) {
+  if (event.target == document.getElementById('applyPopupForm')) {
+    document.getElementById('applyPopupForm').style.display = 'none';
+  }
+});
