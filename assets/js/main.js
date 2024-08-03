@@ -10,6 +10,35 @@ const addEventOnElem = function (elem, type, callback) {
   }
 };
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navButtons = document.querySelectorAll(".nav-open-btn");
+
+  const toggleButtonColors = () => {
+    navButtons.forEach(button => {
+      if (document.body.classList.contains("bg-black")) {
+        button.classList.add("bg-black");
+      } else {
+        button.classList.remove("bg-black");
+      }
+    });
+  };
+
+  // Simulate background color change
+  const toggleBackgroundColor = () => {
+    document.body.classList.toggle("bg-black");
+    toggleButtonColors();
+  };
+
+  // Initial call to set button colors based on initial background color
+  toggleButtonColors();
+
+  // Example: Add event listener to a button to change background color
+  document.querySelector("#change-bg-color-btn").addEventListener("click", toggleBackgroundColor);
+});
+
+
 // Navbar Toggle
 
 const navbar = document.querySelector("[data-navbar]");
