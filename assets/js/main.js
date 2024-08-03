@@ -683,7 +683,6 @@ majorInput.addEventListener("change", function () {
 });
 
 function addTag(text) {
-  // Check if the tag already exists
   const existingTags = Array.from(tagContainer.children).map((tag) =>
     tag.textContent.replace("×", "").trim()
   );
@@ -703,5 +702,3 @@ function addTag(text) {
   tag.appendChild(removeButton);
   tagContainer.appendChild(tag);
 }
-
-

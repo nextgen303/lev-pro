@@ -175,6 +175,7 @@ img {
 
 .header .btn {
   display: none;
+  cursor: pointer;
 }
 
 .header {
@@ -5153,6 +5154,7 @@ textarea.error {
 .apply_main_content_two {
   width: 100%;
   background-color: #f5f6f7;
+  position: relative;
 }
 
 .apply-main-top {
@@ -5349,13 +5351,12 @@ textarea.error {
   padding-top: 7px;
 }
 
-.requirements ul{
+.requirements ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  list-style-position: inside;
+  margin-left: 1rem;
 }
-
 
 .requirements,
 .benifits {
@@ -5371,8 +5372,7 @@ textarea.error {
 }
 
 .requirements .requirements_details,
-.requirements p
-{
+.requirements p {
   font-size: 12px;
   line-height: 16px;
   color: var(--about-primary-color);
@@ -5381,7 +5381,7 @@ textarea.error {
 
 .benifis_des {
   display: flex;
-  align-items:center;
+  align-items: center;
   gap: 8px;
 }
 .benifis_des i {
@@ -5389,18 +5389,18 @@ textarea.error {
   color: black;
 }
 
-.apply_button{
+.apply_button {
   margin-top: 2rem;
 }
 
-.apply_button button{
+.apply_button button {
   padding: 6px 28px;
   border: 1px solid var(--black);
   font-size: 14px;
   font-family: var(--gelion-black);
 }
 
-.right_part_bottom{
+.right_part_bottom {
   height: 306px;
   background-color: var(--white);
   margin-top: 1.6rem;
@@ -5410,14 +5410,14 @@ textarea.error {
   padding-left: 2.4rem;
 }
 
-.right_part_bottom_card_titles h2{
+.right_part_bottom_card_titles h2 {
   font-size: 34px;
   font-family: var(--gelion-semibold);
   line-height: 34px;
   font-weight: 100;
 }
 
-.right_part_bottom_card_titles p{
+.right_part_bottom_card_titles p {
   font-size: 16px;
   line-height: 21px;
   opacity: 0.5;
@@ -5426,25 +5426,25 @@ textarea.error {
   padding-top: 12px;
 }
 
-.social_links_left{
+.social_links_left {
   margin-top: 3.6rem;
   display: flex;
   gap: 1rem;
-  color: #5862ED;
+  color: #5862ed;
 }
 
-.social_links_left a{
-  border: 1px solid #5862ED;
+.social_links_left a {
+  border: 1px solid #5862ed;
   border-radius: 50%;
   height: 30px;
   width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-z-index: 989999;
+  z-index: 99;
 }
 
-.card_bg_image_logo{
+.card_bg_image_logo {
   position: absolute;
   right: 0;
   bottom: 0;
