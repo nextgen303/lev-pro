@@ -1633,7 +1633,8 @@ header .btn {
 /* --------------------------- Footer --------------------- */
 
 .footer {
-  padding: 2.5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 12rem;
   height: 100%;
   width: 100%;
   background-color: var(--footer-bg);
@@ -1658,7 +1659,7 @@ header .btn {
 }
 
 .footer_content .short_links a {
-  font-size: var(--h5);
+  font-size: 14px;
 }
 
 .footer_content .service_items {
@@ -1669,7 +1670,7 @@ header .btn {
 }
 
 .footer_content .service_items h3 {
-  font-size: var(--h3);
+  font-size: 14px;
   font-family: var(--gelion-light);
 }
 
@@ -1687,7 +1688,7 @@ header .btn {
 
 .footer_content .contact_info p {
   width: 70%;
-  font-size: var(--h6);
+  font-size: 12px;
 }
 
 .footer .short_links img {
@@ -1697,6 +1698,75 @@ header .btn {
 
 .footer_content .social_links {
   margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer_content .social_links i {
+  border: 1px solid var(--white);
+  padding: 6px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.newslatter_socials .newslatter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newslatter_socials .newslatter h4 {
+  font-size: 20px;
+  font-family: var(--gelion-regular);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.newslatter_socials .newslatter p {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 25px;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form .mail-logo img {
+  width: 15px;
+  position: absolute;
+  right: 12px;
+  top: 15px;
+}
+
+.newsletter-form .mail_box {
+  display: flex;
+  position: relative;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  height: 45px;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  width: 225px;
+  outline: none;
+}
+
+.newsletter-form input::placeholder {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.486) !important;
+}
+
+.newsletter-form button {
+  height: 45px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .footer .bottom_logo {
