@@ -5145,3 +5145,129 @@ textarea.error {
   font-weight: bold;
   margin-top: 20px;
 }
+
+/* ---------------------------- Apply Page Start -------------------------- */
+.apply_hero_theme {
+  background-color: var(--program-theme);
+  height: 273px;
+  width: 100%;
+}
+
+.apply_main_content_two {
+  width: 100%;
+  background-color: #f5f6f7;
+}
+
+.apply-main-top {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.apply_content_left {
+  width: 317px;
+  margin-top: -116px;
+}
+
+.apply_content_left_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.apply_content_left_cards .apply_content_left_card {
+  height: 332px;
+  background-color: var(--white);
+}
+
+.apply_content_left_card .more_details {
+  padding: 1rem;
+}
+
+.more_details .left_card_titles {
+  margin-bottom: 12px;
+}
+
+.more_details .left_card_titles h3 {
+  font-size: 20px;
+  font-family: var(--gelion-semibold);
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.more_details .left_card_titles h6 {
+  font-size: 12px;
+  color: #404f5e;
+  opacity: 0.5;
+}
+
+.left_card_job_des {
+  display: flex;
+  gap: 0.3rem;
+  padding-bottom: 12px;
+}
+
+.fulltime,
+.usa,
+.parttime {
+  font-size: 12px;
+  line-height: 16px;
+  width: 70px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.fulltime {
+  color: #32a68c;
+  background-color: #32a68d2a;
+}
+
+.parttime {
+  color: #fd9444;
+  background-color: #fd94442a;
+}
+
+.usa {
+  color: #ffb4d2;
+  background-color: #ffb4d22b;
+}
+
+.left_card_details {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #707070;
+}
+
+.left_card_details p {
+  font-size: 12px;
+  color: var(--black);
+  opacity: 0.2;
+}
+
+.selary_more {
+  margin-top: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selary_more h6 {
+  font-size: 12px;
+  color: var(--bg-two);
+}
+
+.selary_more .more_button {
+  font-size: 14px;
+  color: var(--black);
+  text-transform: uppercase;
+  font-family: var(--gelion-black);
+  padding: 12px 24px;
+}
+
+.apply_content_right {
+  width: 672px;
+  margin-top: -116px;
+}
