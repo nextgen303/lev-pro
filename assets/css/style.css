@@ -1767,6 +1767,7 @@ header .btn {
   transition: background-color 0.3s ease;
 }
 
+
 .footer .bottom_logo {
   position: absolute;
   bottom: 0;
@@ -4409,6 +4410,7 @@ input[type="number"]::placeholder {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 3rem;
+  gap: 1rem;
 }
 
 .tab_serach .tabs {
@@ -4468,6 +4470,14 @@ input[type="number"]::placeholder {
 
 .tab_search_container .tab_search-button i {
   font-size: 16px;
+}
+
+.all_programs_card {
+  display: none;
+}
+
+.all_programs_card.show {
+  display: block;
 }
 
 /* -- Main Program -- */
