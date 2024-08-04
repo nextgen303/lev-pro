@@ -391,6 +391,16 @@
   .all_programs_main {
     padding-top: 6rem;
   }
+
+  .blog_content .blog_title {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #blog_header .logo img {
+    filter: invert(1) !important;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -435,10 +445,16 @@
   .gallery_form_content .form_left h1,
   .mission_top .large_title h1,
   .all_programs_title h1,
-  .all_blog_title h1 {
+  .all_blog_title h1,
+  .blog_content .blog_title h1 {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
+  }
+
+  .blog_hero_card .right_blog_details .blog_heading h1 {
+    font-size: 34px;
+    line-height: 43px;
   }
 
   /* --------------------------- Section Four ------------------------ */
@@ -645,6 +661,10 @@
 
   .all_programs_title h5 {
     width: 80%;
+  }
+
+  .blog_hero {
+    padding: 0 1rem;
   }
 }
 
@@ -968,6 +988,11 @@
     height: 557px;
     background-color: #f5f6f7;
     box-shadow: 0px 4px 8px #00000015;
+  }
+
+  .blog_card {
+    max-width: 275px;
+    height: 465px;
   }
 }
 
@@ -1876,13 +1901,114 @@
     line-height: 21px;
   }
 
-  .all_programs_main_container, .all_blog_main_container, .all_programs_content {
+  .all_programs_main_container,
+  .all_blog_main_container,
+  .all_programs_content {
     padding: 0 1rem;
   }
-  .program_name_flag .name h2{
+  .program_name_flag .name h2 {
     font-size: 34px;
   }
 
+  .all_blog_cards {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .blog_card {
+    height: 465px;
+  }
+
+  .blog_content .blog_title p {
+    width: 90%;
+  }
+
+  .blog_hero_card {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #70707049;
+  }
+
+  .blog_hero_card .left_img,
+  .blog_hero_card .right_blog_details {
+    width: 100%;
+  }
+
+  .blog_card {
+    max-width: 100%;
+    height: 465px;
+    border-bottom: 1px solid #7070702e;
+  }
+
+  .blog_content .blog_title h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .blog_content .blog_title p {
+    font-size: 16px;
+    line-height: 21px;
+    width: 95%;
+  }
+  .right_blog_details .blog_heading h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .blog_hero_card .right_blog_details .blog_article p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .blog_hero_card .right_blog_details .post_date h6 {
+    font-size: 14px;
+  }
+
+  .all_blog_main {
+    margin-top: 7rem;
+  }
+
+  .all_blog_title h1 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 34px;
+    text-transform: capitalize;
+  }
+
+  .tab_serach {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.tab_serach .tabs {
+ align-items: center;
+ justify-content: center;
+}
+
+  .tab_serach .search {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  .search_box {
+    width: 100%;
+  }
+
+  .all_blog_cards {
+    row-gap: 3rem;
+  }
+
+  .blog_card {
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+
+  .blog_map_content p{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 550px) {
