@@ -64,7 +64,7 @@
     width: 100%;
     padding-left: 15%;
     padding-right: 2rem;
-}
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -403,7 +403,6 @@
     padding-top: 7rem;
   }
 
-
   .releted_program_title .subttitle .line {
     max-width: 400px;
   }
@@ -414,7 +413,7 @@
     filter: invert(1) !important;
   }
 
-  .top_content{
+  .top_content {
     height: max-content;
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -424,7 +423,7 @@
     width: 40%;
   }
 
-  .top_content .left_part h1{
+  .top_content .left_part h1 {
     font-size: 58px;
     line-height: 58px;
   }
@@ -477,15 +476,23 @@
   .mission_top .large_title h1,
   .all_programs_title h1,
   .all_blog_title h1,
-  .blog_content .blog_title h1 {
+  .blog_content .blog_title h1,
+  .faq-right h1,
+  .showcase_heading_left h1,
+  .section_six_title h1  {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
+    width: 100%;
   }
 
   .blog_hero_card .right_blog_details .blog_heading h1 {
     font-size: 34px;
     line-height: 43px;
+  }
+
+  .section_six_items h2{
+    font-size: 28px;
   }
 
   /* --------------------------- Section Four ------------------------ */
@@ -700,7 +707,7 @@
 
   .apply_main_content {
     padding: 0 1rem;
-}
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1052,20 +1059,20 @@
   .top_content .right_part .top_img img {
     display: none;
   }
-  
-  .top_content .right_part .bottom_img  .bottom_img_hidden{
+
+  .top_content .right_part .bottom_img .bottom_img_hidden {
     display: none;
   }
 
-  .top_content{
+  .top_content {
     flex-direction: column;
   }
 
-  .left_part{
+  .left_part {
     margin-top: 8rem;
   }
 
-  .right_part{
+  .right_part {
     position: absolute;
     top: 5rem;
     left: 60%;
@@ -1075,10 +1082,40 @@
     width: 100%;
   }
 
-.right_part .bottom_img{
-  width: 344px;
-}
+  .right_part .bottom_img {
+    width: 344px;
+  }
 
+  .faq-headings {
+    flex-direction: column;
+  }
+
+  .faq-right {
+    order: 1;
+    text-align: center;
+  }
+
+  .faq-left {
+    order: 2;
+    text-align: center;
+    padding-top: 12px;
+    width: 100%;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_faq {
+    margin-top: 4rem;
+  }
+
+  .pagination-container {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -2160,7 +2197,7 @@
     width: 80%;
   }
 
-  .top_content .left_part h1{
+  .top_content .left_part h1 {
     font-size: 48px;
     line-height: 48px;
   }
@@ -2171,23 +2208,59 @@
 
   .releted_program_title .subttitle .line {
     max-width: 270px;
-}
+  }
 
-.apply_titles{
-  flex-direction: column;
-  gap: 7px;
-}
+  .apply_titles {
+    flex-direction: column;
+    gap: 7px;
+  }
 
-.apply_main{
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
+  .apply_main {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 
-.top_content {
-  padding: 0 1rem;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-}
+  .top_content {
+    padding: 0 1rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .section_six {
+    margin-top: 5rem;
+  }
+
+  .section_six_items h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .section_seven {
+    margin-top: 6rem;
+  }
+
+  .faq-right h1 {
+    font-size: 34px;
+    line-height: 34px;
+    width: 100%;
+    text-align: center;
+  }
+  .main_heading h1 {
+    text-align: start;
+  }
+
+  .faq_search_container {
+    width: 100%;
+  }
+
+  .faq_content {
+    padding: 0;
+  }
+
+  .faq-left,
+  .faq-right {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -2251,10 +2324,19 @@
     line-height: 21px;
   }
 
-  
   .releted_program_title .subttitle .line {
     max-width: 200px;
-}
+  }
+
+  .faq-question h2{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .faq-answer p{
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2407,7 +2489,7 @@
 
   .releted_program_title .subttitle .line {
     max-width: 110px;
-}
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -2441,7 +2523,7 @@
 
   .releted_program_title .subttitle .line {
     max-width: 90px;
-}
+  }
 }
 
 @media screen and (max-height: 680px) {
