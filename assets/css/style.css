@@ -4575,6 +4575,7 @@ input[type="number"]::placeholder {
   justify-content: center;
   height: 820px;
   max-width: 1154px;
+  padding: 0 2rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -4805,22 +4806,33 @@ input[type="number"]::placeholder {
   gap: 2rem;
   padding-top: 2rem;
   color: var(--white);
+ margin-left: 3rem;
+}
+
+.releted_program_title .subttitle a{
+  width: 140px;
 }
 
 .releted_program_title .subttitle .line {
   height: 1px;
-  width: 803px;
+  width: 780px;
   background-color: #70707045;
 }
 
 .releted_program_main .releted_card__container {
   display: flex;
+  flex-wrap: wrap;
   background-color: var(--program-theme);
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   padding-top: 4rem;
   padding-bottom: 10rem;
   margin-top: -1rem;
+}
+
+.releted_card__container .card__article{
+  max-width: 300px;
 }
 
 .releted_program_main .releted_card__container .card__article {
