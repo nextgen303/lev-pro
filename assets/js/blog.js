@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tabs a");
   const blogCards = document.querySelectorAll(".blog_card");
   const searchInput = document.querySelector(".tab_search-input");
-  const noResultMessage = document.querySelector(".no-result-message");
 
   // Function to show or hide blog cards based on the selected category
   const filterBlogsByCategory = (category) => {
@@ -85,40 +84,29 @@ document.addEventListener("DOMContentLoaded", () => {
   filterBlogsByCategory(activeTab);
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the modal
+  // Get modal elements
   var modal = document.getElementById("myModal");
-
-  // Get the button that opens the modal
   var btn = document.querySelector(".blog_create_btn");
-
-  // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
-
-  // Get the close button (if it exists)
   var closeBtn = document.getElementById("closeBtn");
 
-  // When the user clicks the button, open the modal
   btn.onclick = function () {
     modal.style.display = "block";
   };
 
-  // When the user clicks on <span> (x), close the modal
   if (span) {
     span.onclick = function () {
       modal.style.display = "none";
     };
   }
 
-  // When the user clicks on the close button, close the modal
   if (closeBtn) {
     closeBtn.onclick = function () {
       modal.style.display = "none";
     };
   }
 
-  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
@@ -133,34 +121,20 @@ document.addEventListener("DOMContentLoaded", function () {
     var steps = document.getElementsByClassName("step");
     steps[n].classList.add("active");
 
-    // Update the Previous button visibility
-    if (n == 0) {
-      document.getElementById("prevBtn").disabled = true;
-    } else {
-      document.getElementById("prevBtn").disabled = false;
-    }
-
-    // Update the Next button text
-    if (n == steps.length - 1) {
-      document.getElementById("nextBtn").innerHTML = "Submit";
-    } else {
-      document.getElementById("nextBtn").innerHTML = "Next";
-    }
+    document.getElementById("prevBtn").disabled = (n == 0);
+    document.getElementById("nextBtn").innerHTML = (n == steps.length - 1) ? "Submit" : "Next";
 
     updateStepIndicators(n);
   }
 
-  function nextPrev(n) {
-    var steps = document.getElementsByClassName("step");
-
-    // Check if the current step is filled before proceeding
+  window.nextPrev = function (n) {
     if (!validateStep(currentStep)) {
       return;
     }
 
+    var steps = document.getElementsByClassName("step");
     steps[currentStep].classList.remove("active");
-
-    currentStep = currentStep + n;
+    currentStep += n;
 
     if (currentStep >= steps.length) {
       document.getElementById("regForm").submit();
@@ -168,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     showStep(currentStep);
-  }
+  };
 
   function validateStep(stepIndex) {
     var step = document.getElementsByClassName("step")[stepIndex];
@@ -176,6 +150,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var valid = true;
 
     inputs.forEach((input) => {
+      if (input.type === "file") {
+        return;
+      }
+
       if (input.value.trim() === "") {
         input.classList.add("error");
         valid = false;
@@ -185,9 +163,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     var errorMessages = step.querySelectorAll(".error-message");
-    errorMessages.forEach((msg) => (msg.style.display = valid ? "none" : "block"));
+    errorMessages.forEach((msg) => {
+      msg.style.display = valid ? "none" : "block";
+    });
 
     return valid;
+  }
+
+  function updateStepIndicators(n) {
+    var steps = document.getElementsByClassName("step");
+    for (var i = 0; i < steps.length; i++) {
+      steps[i].classList.remove("active");
+    }
+    steps[n].classList.add("active");
   }
 
   // Word count functionality for text areas
@@ -223,14 +211,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  function updateStepIndicators(n) {
-    var steps = document.getElementsByClassName("step");
-    for (var i = 0; i < steps.length; i++) {
-      steps[i].classList.remove("active");
-    }
-    steps[n].classList.add("active");
-  }
-
   // Drop zone and file upload functionality
   const dropZone = document.getElementById("dropZone");
   const fileInput = document.getElementById("uploadPictures");
@@ -262,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
     handleFiles(this.files);
   });
 
-  plusIcons.forEach(icon => {
+  plusIcons.forEach((icon) => {
     icon.addEventListener("click", function () {
       const inputId = this.getAttribute("data-input-id");
       document.getElementById(inputId).click();
@@ -270,7 +250,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function handleFiles(files) {
-    [...files].forEach((file, index) => {
+    const allowedFiles = [...files].slice(0, 5); // Limit to 5 files
+
+    allowedFiles.forEach((file, index) => {
       if (index < imageFields.length) {
         const reader = new FileReader();
         reader.onload = function (e) {
@@ -292,15 +274,19 @@ document.addEventListener("DOMContentLoaded", function () {
         reader.onload = function (e) {
           const preview = document.getElementById(`preview${index + 1}`);
           preview.style.backgroundImage = `url(${e.target.result})`;
-          document.getElementById(`imageField${index + 1}`).querySelector(".plus-icon").style.display = "none";
-          document.getElementById(`imageField${index + 1}`).querySelector(".remove-icon").style.display = "block";
+          document
+            .getElementById(`imageField${index + 1}`)
+            .querySelector(".plus-icon").style.display = "none";
+          document
+            .getElementById(`imageField${index + 1}`)
+            .querySelector(".remove-icon").style.display = "block";
         };
         reader.readAsDataURL(file);
       }
     });
   });
 
-  document.querySelectorAll(".remove-icon").forEach(icon => {
+  document.querySelectorAll(".remove-icon").forEach((icon) => {
     icon.addEventListener("click", function () {
       const inputId = this.getAttribute("data-input-id");
       const fileInput = document.getElementById(inputId);
@@ -312,3 +298,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+

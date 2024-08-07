@@ -6121,7 +6121,10 @@ input[type="number"]::placeholder {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
   width: 100%;
   display: inline-block;
 }
@@ -6165,6 +6168,16 @@ input[type="password"] {
 .step.active {
   display: block;
 }
+
+.error {
+  border-color: red;
+}
+
+.error-message {
+  display: none;
+  color: red;
+}
+
 
 .step-buttons {
   display: -webkit-box;

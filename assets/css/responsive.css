@@ -525,6 +525,10 @@
     width: 100%;
   }
 
+  .blog_content .blog_title h1{
+    text-align: center;
+  }
+
   .blog_hero_card .right_blog_details .blog_heading h1 {
     font-size: 34px;
     line-height: 43px;
