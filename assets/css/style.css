@@ -4490,52 +4490,17 @@ input[type="number"]::placeholder {
   z-index: -9;
 }
 
-.images-content .row {
-  display: -ms-flexbox; /* IE10 */
-  display: -webkit-box;
-  display: flex;
-  padding: 0 4px;
-  min-width: 600px;
+.showcase_container {
+  padding-top: 7rem;
 }
 
-.column {
-  -ms-flex: 33%; /* IE10 */
-  -webkit-box-flex: 33%;
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
+.showcase_images {
+  background-color: transparent;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    -webkit-box-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    -webkit-box-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-/* ----------------------- About Section Seven / Gardinets Image --------------------- */
-
-.gardinets_image_seven {
-  height: 890px;
+.gardinets_image_showcse {
+  height: 700px;
   padding: 2rem 0;
-  margin-top: -50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4546,55 +4511,19 @@ input[type="number"]::placeholder {
   -ms-flex-pack: end;
   justify-content: flex-end;
   position: relative;
-  z-index: 1;
+  margin-top: -40rem;
 }
 
-.gardients_seven {
+.gardients {
   position: absolute;
   width: 100%;
 }
 
-/* ----------------------- About Section Eight / All Image --------------------- */
-.seven_all_images {
-  background: #f7f7f8;
-  width: 100%;
-  z-index: 90;
-  padding-top: -40;
+.all_images_showcase {
+  background-color: transparent;
 }
 
-.seven_images_content {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-  gap: 1.4rem;
-  padding: 3rem 0;
-}
-
-.seven_images_content .btn_one {
-  width: 180px;
-  padding: 16px 36px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.seven_images_content .see_all_btn {
-  width: 170px;
-  margin: 0 auto;
-  font-size: var(--p);
-  color: #0c0f11;
-  font-family: var(--gelion-regular);
-}
-
-.seven_images_content h1 {
-  font-size: var(--h1);
-  font-family: var(--gelion-black);
-  line-height: 65px;
+.all_images_showcase h1 {
   color: var(--bg-two);
 }
 
@@ -4685,7 +4614,8 @@ input[type="number"]::placeholder {
   overflow: hidden;
 }
 
-.showcase_part {
+.showcase_part,
+.showcase_part_mob {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4722,7 +4652,8 @@ input[type="number"]::placeholder {
   z-index: 99;
 }
 
-.showcase_part_right {
+.showcase_part_right,
+.showcase_part_down {
   background-color: var(--white);
   padding: 1.3rem;
   height: 608px;
@@ -4731,6 +4662,7 @@ input[type="number"]::placeholder {
 }
 
 .showcase_part_right h2,
+.showcase_part_mob h2,
 .form_right .form_right_container h2 {
   font-size: var(--h2);
   font-family: var(--gelion-light);
@@ -4740,6 +4672,7 @@ input[type="number"]::placeholder {
 }
 
 .showcase_part_right form,
+.showcase_part_down form,
 .form_right .form_right_container form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4752,6 +4685,7 @@ input[type="number"]::placeholder {
 }
 
 .showcase_part_right form input,
+.showcase_part_down form input,
 .form_right .form_right_container input {
   border: 1px solid #70707019;
   padding: 12px 1rem;
@@ -4762,6 +4696,10 @@ input[type="number"]::placeholder {
 
 .form_right .form_right_container input {
   border: 1px solid white;
+}
+
+.pc_hidden{
+  display: none;
 }
 
 input[type="text"]::-webkit-input-placeholder,

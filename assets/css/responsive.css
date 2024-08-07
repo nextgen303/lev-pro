@@ -2314,6 +2314,7 @@
   .eight_card {
     width: 100%;
   }
+
   .showcase_part {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2321,7 +2322,7 @@
     flex-direction: column;
   }
 
-  .showcase_part_right {
+  .hidden_for_mob {
     display: none;
   }
 
@@ -2648,6 +2649,24 @@
   .faq-right {
     width: 100%;
   }
+
+  .small_img,
+  .small_img_2 {
+    width: 40%;
+    padding: 3rem;
+  }
+
+  .small_img_2 {
+    position: absolute;
+    top: 54% !important;
+  }
+
+  .images .bottom_one {
+    bottom: 6rem;
+    left: 60% !important;
+    display: flex;
+
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -2740,6 +2759,19 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .showcase-content_two{
+    padding: 1rem;
+  }
+
+  .showcase_part_right {
+    height: auto;
+    padding: 3rem 1rem;
+    width: 100% !important;
+    z-index: 9;
+  }
+
+
 }
 
 @media screen and (max-width: 450px) {
