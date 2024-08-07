@@ -3476,6 +3476,7 @@ input[type="number"]::placeholder {
   width: 316px;
   border: 1px solid var(--white);
   padding: 13px;
+  font-family: var(--gelion-black);
 }
 
 

@@ -2790,6 +2790,15 @@
     display: none;
   }
 
+  .fb_group_content .group_left h1{
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .fb_group_content .group_right p{
+    font-size: 16px;
+    line-height: 21px;
+  }
 
 }
 
