@@ -368,7 +368,7 @@
 
   .contact_right_bottom {
     position: absolute;
-    bottom: -15rem;
+    bottom: -18rem;
   }
 
   .apply_content_right {
@@ -1079,7 +1079,7 @@
 
   .contact_right_bottom {
     position: absolute;
-    bottom: -20rem;
+    bottom: -24rem;
     width: 80%;
     height: -webkit-min-content;
     height: -moz-min-content;
@@ -2716,7 +2716,7 @@
   /* ------------------------ Contact page Start --------------------- */
 
   .contact_right_bottom {
-    bottom: -17rem;
+    bottom: -22rem;
     margin-right: 0.7rem;
     width: 95%;
     height: auto;
