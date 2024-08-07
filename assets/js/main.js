@@ -33,9 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initial call to set button colors based on initial background color
   toggleButtonColors();
-
-  // Example: Add event listener to a button to change background color
-  document.querySelector("#change-bg-color-btn").addEventListener("click", toggleBackgroundColor);
 });
 
 
@@ -607,35 +604,35 @@ let programSevenCards = new Swiper(".programs_seven_card", {
 
   breakpoints: {
     400: {
-      slidesPerView: 1.2,
-    },
-
-    600: {
       slidesPerView: 1.6,
     },
 
+    600: {
+      slidesPerView: 2,
+    },
+
     708: {
-      slidesPerView: 2.1,
+      slidesPerView: 3,
     },
 
     808: {
-      slidesPerView: 2.1,
+      slidesPerView: 4,
     },
 
     968: {
-      slidesPerView: 2.4,
+      slidesPerView: 4,
     },
 
     1100: {
-      slidesPerView: 2.7,
+      slidesPerView: 4.4,
     },
 
     1160: {
-      slidesPerView: 2.7,
+      slidesPerView: 4,
     },
 
     1250: {
-      slidesPerView: 2.9,
+      slidesPerView: 4,
     },
 
     1350: {
@@ -700,34 +697,38 @@ function closePopup() {
   tags.forEach((tag) => tag.remove());
 }
 
-const majorInput = document.getElementById("majorInput");
-const tagContainer = document.querySelector(".tag_container");
+document.addEventListener("DOMContentLoaded", function () {
+  const majorInput = document.getElementById("majorInput");
+  const tagContainer = document.querySelector(".tag_container");
 
-majorInput.addEventListener("change", function () {
-  const selectedMajor = majorInput.value;
-  if (selectedMajor) {
-    addTag(selectedMajor);
-    majorInput.value = "";
+  if (majorInput && tagContainer) {
+    majorInput.addEventListener("change", function () {
+      const selectedMajor = majorInput.value;
+      if (selectedMajor) {
+        addTag(selectedMajor);
+        majorInput.value = "";
+      }
+    });
+
+    function addTag(text) {
+      const existingTags = Array.from(tagContainer.children).map((tag) =>
+        tag.textContent.replace("×", "").trim()
+      );
+      if (existingTags.includes(text)) return;
+
+      const tag = document.createElement("div");
+      tag.className = "tag";
+      tag.innerText = text;
+
+      const removeButton = document.createElement("span");
+      removeButton.className = "remove_tag";
+      removeButton.innerHTML = "&times;";
+      removeButton.onclick = function () {
+        tag.remove();
+      };
+
+      tag.appendChild(removeButton);
+      tagContainer.appendChild(tag);
+    }
   }
 });
-
-function addTag(text) {
-  const existingTags = Array.from(tagContainer.children).map((tag) =>
-    tag.textContent.replace("×", "").trim()
-  );
-  if (existingTags.includes(text)) return;
-
-  const tag = document.createElement("div");
-  tag.className = "tag";
-  tag.innerText = text;
-
-  const removeButton = document.createElement("span");
-  removeButton.className = "remove_tag";
-  removeButton.innerHTML = "&times;";
-  removeButton.onclick = function () {
-    tag.remove();
-  };
-
-  tag.appendChild(removeButton);
-  tagContainer.appendChild(tag);
-}
