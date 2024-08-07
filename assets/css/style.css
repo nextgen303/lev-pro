@@ -3115,6 +3115,7 @@ header .btn {
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 1rem;
+  overflow: hidden !important;
 }
 
 .contact_left,
@@ -3409,6 +3410,75 @@ input[type="number"]::placeholder {
 .contact_footer {
   background-color: #7abaff;
 }
+
+.fb_group {
+  background-color: var(--bg-two);
+  padding: 6rem 0;
+  color: var(--white);
+  overflow:  hidden !important;
+
+}
+
+.fb_group_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  max-width: 1200px;
+  padding:  0 2rem;
+  margin: 0 auto;
+}
+
+.fb_group_content .group_left,
+.fb_group_content .group_right{
+  width: 50%;
+}
+
+.fb_group_content .group_left img{
+  width: 99px;
+}
+
+.fb_group_content .group_left h1{
+  font-size: 80px;
+  line-height: 80px;
+  font-family: var(--gelion-bold);
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.fb_group_content .group_left img:nth-child(3){
+  width: 100%;
+}
+
+.fb_group_content .group_right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fb_group_content .group_right img{
+  width: 100%;
+}
+
+.fb_group_content .group_right p{
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--white);
+  opacity: 0.5;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.fb_group_content .group_right button{
+  width: 316px;
+  border: 1px solid var(--white);
+  padding: 13px;
+}
+
+
 
 /* --------------------------------------- Contact Page END ----------------------------------------------- */
 
@@ -4698,7 +4768,7 @@ input[type="number"]::placeholder {
   border: 1px solid white;
 }
 
-.pc_hidden{
+.pc_hidden {
   display: none;
 }
 

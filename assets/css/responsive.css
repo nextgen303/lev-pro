@@ -437,6 +437,11 @@
   .releted_program_title .subttitle .line {
     max-width: 400px;
   }
+
+  .fb_group_content .group_left h1{
+    font-size: 54px;
+    line-height: 54px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1307,6 +1312,16 @@
     -ms-flex-pack: center;
     justify-content: center;
   }
+
+  
+.fb_group_content{
+  flex-direction: column;
+}
+
+.fb_group_content .group_left,
+.fb_group_content .group_right{
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 660px) {
@@ -2769,6 +2784,10 @@
     padding: 3rem 1rem;
     width: 100% !important;
     z-index: 9;
+  }
+
+  .group_left img{
+    display: none;
   }
 
 
