@@ -722,11 +722,17 @@ header .btn {
 /*------------- Slider  -------------- */
 
 .card__container {
+  width: calc(100% - 200px); /* Set initial width accounting for margin */
+  margin-left: 200px; /* Initial margin */
+  transition: margin-left 1s ease, width 1s ease; /* Smooth transition */
+}
+
+.card__container.full-width {
   width: 100%;
+  margin-left: 0;
 }
 
 .card__content {
-  overflow: hidden;
   width: 100%;
 }
 

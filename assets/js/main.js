@@ -10,13 +10,11 @@ const addEventOnElem = function (elem, type, callback) {
   }
 };
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const navButtons = document.querySelectorAll(".nav-open-btn");
 
   const toggleButtonColors = () => {
-    navButtons.forEach(button => {
+    navButtons.forEach((button) => {
       if (document.body.classList.contains("bg-black")) {
         button.classList.add("bg-black");
       } else {
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial call to set button colors based on initial background color
   toggleButtonColors();
 });
-
 
 // Navbar Toggle
 
@@ -58,6 +55,27 @@ const closeNavbar = function () {
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
 /*=============== Slider ===============*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardContainer = document.querySelector(".card__container");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            cardContainer.classList.add("full-width");
+          }, 1000);
+          observer.unobserve(cardContainer); 
+        }
+      });
+    },
+    { threshold: 0.1 } 
+  );
+
+  observer.observe(cardContainer);
+});
+
 let swiperCards = new Swiper(".card__content", {
   loop: true,
   autoplay: true,
@@ -109,7 +127,7 @@ let swiperCards = new Swiper(".card__content", {
     },
 
     1350: {
-      slidesPerView: 2.9,
+      slidesPerView: 3.5,
     },
   },
 });
