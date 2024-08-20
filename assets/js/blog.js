@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const regex = new RegExp(`(${searchText})`, "gi");
     const newText = text.replace(
       regex,
-      '<span style="background-color: #10ff00;">$1</span>'
+      '<span style="background-color: #FC535C; ">$1</span>'
     );
     element.innerHTML = newText;
   };
@@ -121,8 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var steps = document.getElementsByClassName("step");
     steps[n].classList.add("active");
 
-    document.getElementById("prevBtn").disabled = (n == 0);
-    document.getElementById("nextBtn").innerHTML = (n == steps.length - 1) ? "Submit" : "Next";
+    document.getElementById("prevBtn").disabled = n == 0;
+    document.getElementById("nextBtn").innerHTML =
+      n == steps.length - 1 ? "Submit" : "Next";
 
     updateStepIndicators(n);
   }
@@ -191,12 +192,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   Object.keys(textareas).forEach((key) => {
     const textarea = textareas[key];
-    const wordCountElement = textarea.parentElement.querySelector(".text_number_update");
-    const warningMessage = textarea.parentElement.querySelector(".warning-message");
+    const wordCountElement = textarea.parentElement.querySelector(
+      ".text_number_update"
+    );
+    const warningMessage =
+      textarea.parentElement.querySelector(".warning-message");
 
     textarea.addEventListener("input", function (event) {
       const max = maxWords[key];
-      const words = event.target.value.trim().split(/\s+/).filter((word) => word.length > 0);
+      const words = event.target.value
+        .trim()
+        .split(/\s+/)
+        .filter((word) => word.length > 0);
       const wordCount = words.length;
 
       if (wordCount > max) {
@@ -259,7 +266,8 @@ document.addEventListener("DOMContentLoaded", function () {
           const preview = imageFields[index].querySelector(".image-preview");
           preview.style.backgroundImage = `url(${e.target.result})`;
           imageFields[index].querySelector(".plus-icon").style.display = "none";
-          imageFields[index].querySelector(".remove-icon").style.display = "block";
+          imageFields[index].querySelector(".remove-icon").style.display =
+            "block";
         };
         reader.readAsDataURL(file);
       }
@@ -291,11 +299,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const inputId = this.getAttribute("data-input-id");
       const fileInput = document.getElementById(inputId);
       fileInput.value = ""; // Clear the file input
-      const preview = this.closest(".image-field").querySelector(".image-preview");
+      const preview =
+        this.closest(".image-field").querySelector(".image-preview");
       preview.style.backgroundImage = ""; // Clear the preview
       this.style.display = "none"; // Hide the remove icon
-      this.closest(".image-field").querySelector(".plus-icon").style.display = "block"; // Show the plus icon
+      this.closest(".image-field").querySelector(".plus-icon").style.display =
+        "block"; // Show the plus icon
     });
   });
 });
-

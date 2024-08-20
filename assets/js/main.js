@@ -60,6 +60,7 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
 /*=============== Slider ===============*/
 let swiperCards = new Swiper(".card__content", {
   loop: true,
+  autoplay: true,
   spaceBetween: 16,
   grabCursor: true,
 

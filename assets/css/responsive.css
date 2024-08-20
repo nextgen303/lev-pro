@@ -52,6 +52,12 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .header, .home {
+    padding: 20px 20px;
+  }
+}
+
 @media screen and (max-width: 1315px) {
   .all_programs_main_container,
   .all_blog_main_container,
