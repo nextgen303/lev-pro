@@ -1,10 +1,9 @@
 @media only screen and (min-width: 1367px) {
   .card__text {
-    width: 810px;
+    width: 58%;
     height: 613px;
     background-color: var(--white);
     padding: 3rem;
-    padding-left: 10rem;
     position: absolute;
     top: -15%;
     z-index: -1;
@@ -86,9 +85,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
-    padding-left: 3rem !important;
-  }
   .card__text {
     width: 500px;
     height: 693px;
@@ -1372,10 +1368,6 @@
     font-size: var(--fs-6);
   }
 
-  .container {
-    padding-left: 1rem !important;
-    padding-right: 0.1rem !important;
-  }
 
   .home__content {
     padding-top: 60%;

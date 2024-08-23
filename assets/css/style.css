@@ -165,11 +165,6 @@ img {
   overflow-x: hidden;
 }
 
-.container {
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 /*--------------------------- HEADER ----------------------------------*/
 
 .header .btn {
@@ -480,9 +475,16 @@ header .btn {
   }
 }
 
-.home__content {
+.home__content,
+.container,
+.program_content_max
+{
   max-width: 1346px;
   margin: 0 auto;
+}
+
+.program_content_max{
+  position: relative;
 }
 
 /* ---------------------------------Home Start -----------------------------*/
@@ -508,7 +510,8 @@ header .btn {
   color: var(--white);
   padding-top: 320px;
   padding-bottom: 150px;
-  margin-left: 208px;
+  padding-left: 187px;
+  margin: 0 auto;
 }
 
 .stroke_text {
@@ -690,7 +693,7 @@ header .btn {
 }
 
 .article_image_part {
-  height: 600px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -717,13 +720,14 @@ header .btn {
   font-style: normal;
   color: #0c0f11;
   margin-bottom: 1rem;
+  padding-left: 3rem;
 }
 
 /*------------- Slider  -------------- */
 
 .card__container {
   width: calc(100% - 200px); /* Set initial width accounting for margin */
-  margin-left: 200px; /* Initial margin */
+  margin-left: 180px; /* Initial margin */
   transition: margin-left 1s ease, width 1s ease; /* Smooth transition */
 }
 
@@ -826,31 +830,27 @@ header .btn {
   gap: 25px;
 }
 
-.main_heading {
-  margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.container .program_title{
+  margin-left: 187px;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  width: 90%;
-  gap: 12rem;
+  justify-content: space-between;
 }
 
-.main_heading h1 {
+
+.container .program_title h1 {
   font-size: var(--h1);
   font-family: var(--gelion-black);
   color: #002d2d;
   text-transform: uppercase;
 }
 
-.main_heading a {
+.container .program_title a {
   color: #002d2d;
   width: 170px;
 }
 
-.main_heading a i {
+.container .program_title a i {
   border: 1px solid #002d2d;
   padding: 10px;
   border-radius: 50px;
@@ -860,7 +860,7 @@ header .btn {
   margin-left: 5px;
 }
 
-.main_heading a:hover i {
+.container .program_title a:hover i {
   margin-left: 17px;
 }
 
@@ -1295,7 +1295,7 @@ header .btn {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .knowledge_heading h1 {
