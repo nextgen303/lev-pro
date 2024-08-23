@@ -54,10 +54,12 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
+
+
 /*=============== Slider ===============*/
 
 document.addEventListener("DOMContentLoaded", function () {
-  const cardContainer = document.querySelector(".card__container");
+  const cardContainer = document.querySelector(".card__container, .card__container_two");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -75,6 +77,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(cardContainer);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardContainer = document.querySelector(" .card__container_two");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            cardContainer.classList.add("full-width");
+          }, 1000);
+          observer.unobserve(cardContainer); 
+        }
+      });
+    },
+    { threshold: 0.1 } 
+  );
+
+  observer.observe(cardContainer);
+});
+
 
 let swiperCards = new Swiper(".card__content", {
   loop: true,
@@ -140,6 +163,8 @@ let swiperCards = new Swiper(".card__content", {
   },
 });
 
+
+
 let brandCards = new Swiper(".brand__content", {
   loop: true,
   spaceBetween: 16,
@@ -204,11 +229,13 @@ let programCards = new Swiper(".programs_card", {
   loop: true,
   spaceBetween: 16,
   grabCursor: true,
+  autoplay: true,
 
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
+
   },
 
   navigation: {
