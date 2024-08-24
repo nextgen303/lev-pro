@@ -6856,3 +6856,128 @@ textarea.error {
   right: 0;
   bottom: 0;
 }
+
+
+/* Custom Icons */
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: white;
+}
+
+/* Fullscreen Modal */
+.fullscreen-modal {
+  display: none; 
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); 
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+}
+
+.fullscreen-modal img{
+  width: 400px;
+  height: fit-content;
+}
+
+.modal-content-two {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1000px;
+  transition: transform 0.5s ease;
+}
+
+.close-btn-two {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 100;
+  transition: 0.3s;
+}
+
+.close-btn-two:hover, .close-btn-two:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.thumbnail-img {
+  margin: 0 5px;
+  width: 45px !important;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail-img:hover {
+  opacity: 1;
+}
+
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .fullscreen-modal img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .modal-content-two {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .close-btn-two {
+    font-size: 40px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .img-list {
+    flex-wrap: wrap; 
+    row-gap: 7px;
+    margin-bottom: 10px;
+  }
+
+  .thumbnail-img {
+    width: 30px !important; /* Smaller thumbnails for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .fullscreen-modal img {
+    width: 90%; /* Slightly smaller for very small screens */
+  }
+
+  .modal-content-two {
+    width: 95%;
+  }
+
+  .close-btn-two {
+    font-size: 35px; /* Even smaller close button */
+  }
+
+  .thumbnail-img {
+    width: 25px !important; /* Even smaller thumbnails */
+  }
+}
