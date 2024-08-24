@@ -1162,6 +1162,7 @@ header .btn {
 
 .venture_heading .left_side {
   width: 40%;
+  margin-left: 168px;
 }
 
 .venture_heading .right_side {
@@ -1195,7 +1196,7 @@ header .btn {
 }
 
 .venture_content {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .venture_top,
@@ -1213,7 +1214,7 @@ header .btn {
 }
 
 .venture_down {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .venture_top .venture_img,
@@ -1252,7 +1253,7 @@ header .btn {
 }
 
 .venture_down .venture_details {
-  padding-left: 5rem;
+  padding-left: 168px;
 }
 
 .venture_top .venture_details h4,
@@ -1347,7 +1348,7 @@ header .btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 5%;
+  margin-top: -5rem;
 }
 
 .knowledge_image_content .image_box:nth-child(2n) {
@@ -1355,7 +1356,7 @@ header .btn {
 }
 
 .knowledge_image_content .image_box img {
-  width: auto;
+  width: 365px;
   height: 450px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1442,11 +1443,15 @@ header .btn {
   margin-top: 3rem;
 }
 
+.card__container_two {
+  width: 120% !important;
+  margin-left: 0;
+}
+
 .media_card .media__image img {
   height: auto;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  margin-right: 0;
 }
 
 /* ------------------------------ Section Eight --------------------------- */
@@ -1465,6 +1470,7 @@ header .btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-left: 168px;
 }
 
 .campus_heading .campus_heading_small,
@@ -1860,6 +1866,79 @@ header .btn {
   opacity: 0.2;
 }
 
+/* --------------------- Join Fb -------------------------- */
+.join_fb_com {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/images/home/happy-friendship.png");
+  background-position: center;
+  background-size: cover;
+  height: 472px;
+  width: 100%;
+  color: var(--white);
+}
+
+.join_fb_content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+.join_fb_level_one {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.join_fb_level_one img {
+  width: 99px;
+}
+
+.join_fb_level_one p {
+  width: 30%;
+  font-size: 14px;
+  opacity: 0.6;
+  line-height: 19px;
+}
+
+.join_fb_level_two h1 {
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  margin-top: 16px;
+}
+
+.join_fb_level_three {
+  margin-top: 15px;
+}
+
+/* --------------------- Our News Updates -------------------------- */
+.news_updates{
+  background: #FAF0E1;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.news_updates_content .level_one_title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.level_two_news_box{
+  display: flex;
+}
+
+.news_box_right_card{
+  display: flex;
+}
+
+
 /* --------------------------- Section Eleven --------------------- */
 .image_showcase {
   width: 100%;
@@ -2213,6 +2292,7 @@ header .btn {
   bottom: 0;
   width: 100%;
 }
+
 /* --------------------------------------- Home Page END ----------------------------------------------- */
 
 /* --------------------------------------- About Page Start ----------------------------------------------- */
@@ -2363,9 +2443,11 @@ header .btn {
   align-items: center;
   gap: 1rem;
 }
+
 .education_left {
   padding: 3rem 0;
 }
+
 .education_left h2 {
   font-size: var(--h2);
   font-family: var(--gelion-semibold);
@@ -2440,6 +2522,7 @@ header .btn {
   font-family: var(--gelion-light);
   font-size: var(--text);
 }
+
 .education_article p {
   width: 80%;
   font-size: var(--link);
@@ -2822,6 +2905,7 @@ header .btn {
   padding-bottom: 7rem;
   background-color: var(--bg-three);
 }
+
 .world_top_headings {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2923,7 +3007,8 @@ header .btn {
 }
 
 .images-content .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox;
+  /* IE10 */
   display: -webkit-box;
   display: flex;
   padding: 0 4px;
@@ -2931,7 +3016,8 @@ header .btn {
 }
 
 .column {
-  -ms-flex: 33%; /* IE10 */
+  -ms-flex: 33%;
+  /* IE10 */
   -webkit-box-flex: 33%;
   flex: 33%;
   max-width: 33%;
@@ -6033,6 +6119,7 @@ input[type="number"]::placeholder {
   text-align: center;
   color: var(--white);
 }
+
 .releted_program_title .subttitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6100,6 +6187,7 @@ input[type="number"]::placeholder {
 #footer_blog {
   background-color: #fc535c;
 }
+
 /* Modal styles */
 
 .modal {
@@ -6857,15 +6945,15 @@ textarea.error {
   bottom: 0;
 }
 
-
 /* Custom Icons */
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: white;
 }
 
 /* Fullscreen Modal */
 .fullscreen-modal {
-  display: none; 
+  display: none;
   flex-direction: column;
   position: fixed;
   z-index: 1000;
@@ -6874,13 +6962,13 @@ textarea.error {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9); 
+  background-color: rgba(0, 0, 0, 0.9);
   align-items: center;
   justify-content: center;
   padding-top: 0px;
 }
 
-.fullscreen-modal img{
+.fullscreen-modal img {
   width: 400px;
   height: fit-content;
 }
@@ -6903,7 +6991,8 @@ textarea.error {
   transition: 0.3s;
 }
 
-.close-btn-two:hover, .close-btn-two:focus {
+.close-btn-two:hover,
+.close-btn-two:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -6938,8 +7027,8 @@ textarea.error {
 
 @media (max-width: 768px) {
   .fullscreen-modal img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
 
   .modal-content-two {
@@ -6954,19 +7043,21 @@ textarea.error {
   }
 
   .img-list {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     row-gap: 7px;
     margin-bottom: 10px;
   }
 
   .thumbnail-img {
-    width: 30px !important; /* Smaller thumbnails for mobile */
+    width: 30px !important;
+    /* Smaller thumbnails for mobile */
   }
 }
 
 @media (max-width: 480px) {
   .fullscreen-modal img {
-    width: 90%; /* Slightly smaller for very small screens */
+    width: 90%;
+    /* Slightly smaller for very small screens */
   }
 
   .modal-content-two {
@@ -6974,10 +7065,12 @@ textarea.error {
   }
 
   .close-btn-two {
-    font-size: 35px; /* Even smaller close button */
+    font-size: 35px;
+    /* Even smaller close button */
   }
 
   .thumbnail-img {
-    width: 25px !important; /* Even smaller thumbnails */
+    width: 25px !important;
+    /* Even smaller thumbnails */
   }
 }
