@@ -4249,7 +4249,7 @@ input[type="number"]::placeholder {
 } */
 
 .program_main_content {
-  background-color: var(--white);
+  background-color: #F7F7F8; 
 }
 
 .parallax_move_down {
@@ -4258,7 +4258,7 @@ input[type="number"]::placeholder {
   width: 100%;
   z-index: -1;
   background: #e4edf4;
-  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
 .hidden {
@@ -4276,11 +4276,11 @@ input[type="number"]::placeholder {
   align-items: center;
   justify-content: center;
   margin-top: 130px;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease; 
 }
 
 .main_bg.white-background {
-  background-color: white; /* Change background color to white */
+  background-color: #F7F7F8; 
 }
 
 .main_bg a {

@@ -55,11 +55,11 @@ const closeNavbar = function () {
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
 window.addEventListener("scroll", function () {
-  var scrollPosition = window.scrollY; // Get the current scroll position
+  var scrollPosition = window.scrollY;
   var parallaxElement = document.querySelector(".parallax_move_down");
   var mainBgElement = document.querySelector(".main_bg");
 
-  if (scrollPosition > 130) {
+  if (scrollPosition > 210) {
     parallaxElement.classList.add("hidden");
     mainBgElement.classList.add("white-background");
   } else {
