@@ -2263,7 +2263,7 @@ header .btn {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 24px;
+  gap: 10px;
 }
 
 .footer_content .service_items h3 {
@@ -2424,10 +2424,14 @@ header .btn {
 /* --------------------------------------- About Page Start ----------------------------------------------- */
 
 /* -------------------- About Page Hero Section ----------------------- */
+.about_main_hero {
+  background: linear-gradient(to right, var(--yellow) 50%, var(--bg-three) 50%);
+}
 
 .about_hero {
-  width: 100%;
-  height: 100vh;
+  max-width: 1366px;
+  margin: 0 auto;
+  height: 733px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2437,7 +2441,10 @@ header .btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
 }
+
+
 
 .about_hero_left {
   width: 60%;
@@ -2452,6 +2459,8 @@ header .btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-left: 178px;
+  padding-top: 7rem;
 }
 
 .about_left_content .about_small_title {
@@ -2499,7 +2508,7 @@ header .btn {
   opacity: 0.5;
   font-size: var(--p);
   line-height: 21px;
-  width: 53%;
+  width: 75%;
 }
 
 .about_hero_right {
@@ -2515,14 +2524,13 @@ header .btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
 }
 
 .about_right_img {
   position: absolute;
   right: 0;
   top: 0;
-  width: 120%;
+  width: 693px;
   height: auto;
 }
 
@@ -2543,12 +2551,12 @@ header .btn {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-left: 1rem;
+  padding-left: 1.6rem;
 }
 
 .about_bottom_article {
-  margin-bottom: 6rem;
-  width: 80%;
+  margin-bottom: 3.5rem;
+  width: 63%;
   opacity: 0.5;
   font-size: var(--p);
   line-height: 21px;
@@ -2571,8 +2579,9 @@ header .btn {
 }
 
 .education_left {
-  padding: 3rem 0;
+  padding-left: 160px;
 }
+
 
 .education_left h2 {
   font-size: var(--h2);
@@ -2580,6 +2589,7 @@ header .btn {
   line-height: 34px;
   color: #2d0505;
   padding-bottom: 2rem;
+
 }
 
 .education_left p {
@@ -2658,6 +2668,12 @@ header .btn {
 
 /*  ----------------------- About Section Three ---------------------- */
 
+.founders{
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -2685,24 +2701,17 @@ header .btn {
   object-fit: cover;
 }
 
+
 .founder_img {
-  background-image: url("/assets/images/about/Founder.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 649px;
   background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100%; 
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.founder_info {
+ .founder_info {
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2719,7 +2728,7 @@ header .btn {
   -ms-flex-pack: start;
   justify-content: flex-start;
   color: var(--white);
-}
+} 
 
 .founder_info h2 {
   font-size: var(--h2);
@@ -2801,7 +2810,7 @@ header .btn {
   font-family: var(--gelion-bold);
   line-height: 65px;
   color: var(--about-primary-color);
-  width: 40%;
+  width: 70%;
 }
 
 .venture_headings h4 {
@@ -2914,6 +2923,12 @@ header .btn {
   font-size: var(--link);
   line-height: 16px;
   font-family: var(--gelion-regular);
+}
+
+
+.mission__container{
+  max-width: 1177px;
+  margin: 0 auto;
 }
 
 .mission_top .large_title {
@@ -3877,13 +3892,53 @@ input[type="number"]::placeholder {
 .form_right .form_right_container {
   background-color: #f5f6f7;
   padding: 1.3rem;
-  height: 608px;
+  height: auto;
   width: 396px;
 }
 
 .gallery_footer {
   background-color: #fc535c;
 }
+
+.custom-multiselect {
+  position: relative;
+  width: 100%;
+}
+
+.custom-multiselect input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-multiselect .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.custom-multiselect .options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-multiselect .options label:hover {
+  background: #f1f1f1;
+}
+
 
 /* ------------------------------------- Blog Page Start --------------------------------------- */
 
