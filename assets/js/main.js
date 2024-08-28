@@ -54,63 +54,45 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
-
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   var scrollPosition = window.scrollY; // Get the current scroll position
-  var parallaxElement = document.querySelector('.parallax_move_down');
-  var mainBgElement = document.querySelector('.main_bg');
+  var parallaxElement = document.querySelector(".parallax_move_down");
+  var mainBgElement = document.querySelector(".main_bg");
 
-  if (scrollPosition > 130) { // Adjust the scroll position threshold as needed
-    parallaxElement.classList.add('hidden');
-    mainBgElement.classList.add('white-background');
+  if (scrollPosition > 130) {
+    parallaxElement.classList.add("hidden");
+    mainBgElement.classList.add("white-background");
   } else {
-    parallaxElement.classList.remove('hidden');
-    mainBgElement.classList.remove('white-background');
+    parallaxElement.classList.remove("hidden");
+    mainBgElement.classList.remove("white-background");
   }
 });
 
 /*=============== Slider ===============*/
 
 document.addEventListener("DOMContentLoaded", function () {
-  const cardContainer = document.querySelector(".card__container, .card__container_two");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            cardContainer.classList.add("full-width");
-          }, 1000);
-          observer.unobserve(cardContainer); 
-        }
-      });
-    },
-    { threshold: 0.1 } 
+  const sliders = document.querySelectorAll(
+    ".card__container, .swiper-container-two "
   );
 
-  observer.observe(cardContainer);
+  sliders.forEach((slider) => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              slider.classList.add("full-width");
+            }, 1000);
+            observer.unobserve(slider);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(slider);
+  });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const cardContainer = document.querySelector(" .card__container_two");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            cardContainer.classList.add("full-width");
-          }, 1000);
-          observer.unobserve(cardContainer); 
-        }
-      });
-    },
-    { threshold: 0.1 } 
-  );
-
-  observer.observe(cardContainer);
-});
-
 
 let swiperCards = new Swiper(".card__content", {
   loop: true,
@@ -175,8 +157,6 @@ let swiperCards = new Swiper(".card__content", {
     },
   },
 });
-
-
 
 let brandCards = new Swiper(".brand__content", {
   loop: true,
@@ -248,7 +228,6 @@ let programCards = new Swiper(".programs_card", {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
-
   },
 
   navigation: {
@@ -290,7 +269,7 @@ let programCards = new Swiper(".programs_card", {
     },
 
     1350: {
-      slidesPerView: 4.5,
+      slidesPerView: 5.9,
     },
   },
 });

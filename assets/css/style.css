@@ -644,6 +644,8 @@ header .btn {
   padding: 6px;
 }
 
+
+
 /* --------------------------- Section Two ------------------------ */
 
 .places {
@@ -724,17 +726,21 @@ header .btn {
 
 /*------------- Slider  -------------- */
 
-.card__container,
-.card__container_two {
+.card__container{
   width: calc(100% - 200px);
   margin-left: 220px;
   transition: margin-left 1s ease, width 1s ease;
 }
 
-.card__container.full-width,
-.card__container_two.full-width {
-  width: 100%;
-  margin-left: 0;
+.swiper-container-two{
+  width: calc(100% - 200px);
+  margin-left: 220px !important;
+  transition: margin-left 1s ease, width 1s ease;
+}
+
+.full-width {
+  width: 100vw;
+  margin-left: 0 !important;
 }
 
 .card__content {
@@ -872,6 +878,7 @@ header .btn {
 .program_card__image {
   width: 100%;
   height: 400px;
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4210,7 +4217,6 @@ input[type="number"]::placeholder {
   background-color: white; /* Change background color to white */
 }
 
-
 .main_bg a {
   background-color: transparent;
   border: 1px solid #fff;
@@ -4219,6 +4225,7 @@ input[type="number"]::placeholder {
   font-family: var(--gelion-black);
   padding: 13px 32px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .programe_title {
