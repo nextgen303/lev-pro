@@ -72,7 +72,7 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const sliders = document.querySelectorAll(
-    ".card__container, .swiper-container-two "
+    ".card__container, .swiper-container-two, .card__container_three "
   );
 
   sliders.forEach((slider) => {
@@ -236,40 +236,53 @@ let programCards = new Swiper(".programs_card", {
   },
 
   breakpoints: {
+
+    200: {
+      slidesPerView: 1.4,
+    },
+
     400: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.4,
     },
 
     600: {
-      slidesPerView: 1.6,
+      slidesPerView: 2.6,
     },
 
     708: {
-      slidesPerView: 2.1,
+      slidesPerView: 3.1,
     },
 
     808: {
-      slidesPerView: 2.1,
+      slidesPerView: 3.1,
     },
 
     968: {
-      slidesPerView: 2.4,
+      slidesPerView: 3.4,
     },
 
     1100: {
-      slidesPerView: 2.7,
+      slidesPerView: 3.4,
     },
 
     1160: {
-      slidesPerView: 2.7,
+      slidesPerView: 3.7,
     },
 
     1250: {
-      slidesPerView: 2.9,
+      slidesPerView: 4,
     },
 
     1350: {
-      slidesPerView: 5.9,
+      slidesPerView: 5,
+    },
+
+    1550: {
+      slidesPerView: 7,
+    },
+
+    1850: {
+      slidesPerView: 9,
     },
   },
 });
@@ -278,6 +291,7 @@ let mediaCards = new Swiper(".media_card", {
   loop: true,
   spaceBetween: 16,
   grabCursor: true,
+  autoplay: true,
 
   pagination: {
     el: ".swiper-pagination",

@@ -52,8 +52,13 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .header, .home {
+  .header,
+  .home {
     padding: 20px 20px;
+  }
+
+  .container {
+    padding: 20px;
   }
 }
 
@@ -82,19 +87,13 @@
     padding-left: 15%;
     padding-right: 2rem;
   }
+
+  .home__content {
+    padding-left: 132px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .card__text {
-    width: 500px;
-    height: 693px;
-    background-color: var(--white);
-    padding: 3rem;
-    position: absolute;
-    top: -8rem;
-    z-index: -1;
-  }
-
   .title {
     font-size: var(--link);
     position: relative;
@@ -324,6 +323,43 @@
   .all_programs_hero {
     height: 451px;
   }
+
+  .container .program_title {
+    margin-left: 0px;
+  }
+
+  .news_box_left {
+    width: 55%;
+  }
+
+  .news_box_right {
+    width: 45%;
+  }
+
+  .news_box_left .news_box_article {
+    width: 75%;
+    margin-left: 110px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card__text {
+    width: 500px;
+    height: 693px;
+    background-color: var(--white);
+    padding: 3rem;
+    position: absolute;
+    top: -8rem;
+    z-index: -1;
+  }
+  .home__content {
+    padding-left: 20px;
+  }
+
+  .venture_heading .left_side {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -375,6 +411,18 @@
 
   .apply_content_right {
     padding: 0 1rem;
+  }
+
+  .campus_heading .campus_heading_small {
+    width: 20%;
+  }
+  
+  .campus_heading .campus_heading_large {
+    width: 80%;
+  }
+
+  .campus_heading {
+    margin-left: 1rem;
   }
 }
 
@@ -440,9 +488,18 @@
     max-width: 400px;
   }
 
-  .fb_group_content .group_left h1{
+  .fb_group_content .group_left h1 {
     font-size: 54px;
     line-height: 54px;
+  }
+
+  .image_box_card h2 {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  .news_box_right_card_titles {
+    width: 100%;
   }
 }
 
@@ -520,14 +577,15 @@
   .blog_content .blog_title h1,
   .faq-right h1,
   .showcase_heading_left h1,
-  .section_six_title h1 {
+  .section_six_title h1,
+  .join_fb_level_two h1 {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
     width: 100%;
   }
 
-  .blog_content .blog_title h1{
+  .blog_content .blog_title h1 {
     text-align: center;
   }
 
@@ -613,6 +671,26 @@
     gap: 1rem;
   }
 
+  .level_two_news_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .news_box_left,
+  .news_box_right {
+    width: 100%;
+  }
+
+  .news_box_right_card{
+    width: 48%;
+  }
+
+  .news_box_right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+
   /* --------------------------- Section Eleven --------------------- */
 
   .showcase_heading h1 {
@@ -654,6 +732,8 @@
 
   .footer {
     padding: 2.5rem 0;
+    height: 100%;
+    padding-bottom: 6rem;
   }
 
   .footer_content {
@@ -786,6 +866,54 @@
   .apply_main_content {
     padding: 0 1rem;
   }
+
+  .level_one_title .see_news_btn {
+    margin-right: 20px;
+  }
+
+  .join_fb_level_one p{
+    width: 60%;
+  }
+
+  .image_post .top_one {
+    left: -3rem;
+    top: 5rem;
+    width: 50%;
+  }
+  
+  .image_post .top_two {
+    position: absolute;
+    right: -1rem;
+    top: 0rem;
+    width: 50%;
+  }
+  
+  .image_post .center_one {
+  display: none;
+  }
+  
+  .image_post .center_two {
+   display: none;
+  }
+  
+  .image_post .bottom_one {
+    bottom: 9rem;
+    left: -11rem;
+    width: 50%;
+  }
+  
+  .image_post .bottom_two {
+    right: -6rem;
+    bottom: 2rem;
+    width: 50%;
+  }
+
+  .review_card{
+    padding-top: 3rem;
+  }
+
+
+  
 }
 
 @media screen and (max-width: 750px) {
@@ -870,16 +998,18 @@
   .knowledge_heading .small_title {
     display: -webkit-box;
     display: -ms-flexbox;
+    width: 100%;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 1.2rem;
+    margin-left: -2rem;
   }
 
   .small_title h1 {
-    width: 80%;
+    width: 100%;
     color: #002d2d;
   }
 
@@ -911,6 +1041,10 @@
     height: auto;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+
+  .news_box_right_card{
+    width: 78%;
   }
 
   /* ------------------------------ Section Eight --------------------------- */
@@ -1319,15 +1453,22 @@
     justify-content: center;
   }
 
-  
-.fb_group_content{
-  flex-direction: column;
-}
+  .fb_group_content {
+    flex-direction: column;
+  }
 
-.fb_group_content .group_left,
-.fb_group_content .group_right{
-  width: 100%;
-}
+  .fb_group_content .group_left,
+  .fb_group_content .group_right {
+    width: 100%;
+  }
+
+  .home__content{
+    padding-left: 0px;
+  }
+
+  .container{
+    padding: 0 1rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -1367,7 +1508,6 @@
   h6 {
     font-size: var(--fs-6);
   }
-
 
   .home__content {
     padding-top: 60%;
@@ -1427,6 +1567,10 @@
 
   .btn-area {
     display: none;
+  }
+
+  .fb_join_btn{
+    display: block;
   }
 
   .card__text {
@@ -2682,7 +2826,10 @@
     bottom: 6rem;
     left: 60% !important;
     display: flex;
+  }
 
+  .news_box_right_card{
+    width: 88%;
   }
 }
 
@@ -2777,7 +2924,7 @@
     line-height: 24px;
   }
 
-  .showcase-content_two{
+  .showcase-content_two {
     padding: 1rem;
   }
 
@@ -2788,20 +2935,23 @@
     z-index: 9;
   }
 
-  .group_left img{
+  .group_left img {
     display: none;
   }
 
-  .fb_group_content .group_left h1{
+  .fb_group_content .group_left h1 {
     font-size: 34px;
     line-height: 34px;
   }
 
-  .fb_group_content .group_right p{
+  .fb_group_content .group_right p {
     font-size: 16px;
     line-height: 21px;
   }
 
+  .news_box_right_card{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2945,6 +3095,8 @@
   .apply_content_left_cards .apply_content_left_card {
     width: 100%;
   }
+
+
 
   /* --------------------------- About Section ----------------------- */
   .buttons .btn_one,
