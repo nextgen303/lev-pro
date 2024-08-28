@@ -3179,17 +3179,3 @@
     max-width: 90px;
   }
 }
-
-@media screen and (max-height: 680px) {
-  /* ------------------------ Contact page Start --------------------- */
-  .contact_right_bottom {
-    bottom: -32rem;
-    margin-right: 0.7rem;
-    width: 95%;
-    height: auto;
-  }
-
-  .contact_right_top img {
-    margin-top: 1rem;
-  }
-}
