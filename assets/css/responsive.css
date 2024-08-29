@@ -126,6 +126,7 @@
     align-items: self-start;
     gap: 1rem;
   }
+
   .small__heading .title {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
@@ -341,6 +342,11 @@
     margin-left: 110px;
     padding-bottom: 10px;
   }
+
+  .contact_left,
+  .location_content {
+    margin-left: 100px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -416,7 +422,7 @@
   .campus_heading .campus_heading_small {
     width: 20%;
   }
-  
+
   .campus_heading .campus_heading_large {
     width: 80%;
   }
@@ -529,6 +535,19 @@
   .top_content .left_part p {
     width: 60%;
   }
+
+  .contact_left,
+  .location_content {
+    margin-left: 10px;
+  }
+
+  .member_card_one {
+    position: absolute;
+    top: 15rem;
+    left: 20%;
+    z-index: 1;
+    rotate: 10deg;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -578,11 +597,16 @@
   .faq-right h1,
   .showcase_heading_left h1,
   .section_six_title h1,
-  .join_fb_level_two h1 {
+  .join_fb_level_two h1,
+  .programe_title h1 {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
     width: 100%;
+  }
+
+  .programe_title h5 {
+    font-size: 15px;
   }
 
   .blog_content .blog_title h1 {
@@ -681,7 +705,7 @@
     width: 100%;
   }
 
-  .news_box_right_card{
+  .news_box_right_card {
     width: 48%;
   }
 
@@ -689,6 +713,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 2rem;
+  }
+
+  .main_bg a {
+    font-size: 12px;
   }
 
   /* --------------------------- Section Eleven --------------------- */
@@ -843,14 +871,6 @@
     justify-content: center;
     gap: 1.2rem;
   }
-
-  .contact_heading h1 {
-    width: 90%;
-  }
-
-  .contact_right_bottom {
-    width: 47%;
-  }
   .modal {
     padding: 1rem;
   }
@@ -871,7 +891,7 @@
     margin-right: 20px;
   }
 
-  .join_fb_level_one p{
+  .join_fb_level_one p {
     width: 60%;
   }
 
@@ -880,39 +900,39 @@
     top: 5rem;
     width: 50%;
   }
-  
+
   .image_post .top_two {
     position: absolute;
     right: -1rem;
     top: 0rem;
     width: 50%;
   }
-  
+
   .image_post .center_one {
-  display: none;
+    display: none;
   }
-  
+
   .image_post .center_two {
-   display: none;
+    display: none;
   }
-  
+
   .image_post .bottom_one {
     bottom: 9rem;
     left: -11rem;
     width: 50%;
   }
-  
+
   .image_post .bottom_two {
     right: -6rem;
     bottom: 2rem;
     width: 50%;
   }
 
-  .review_card{
+  .review_card {
     padding-top: 3rem;
   }
 
-  .article_image_part p{
+  .article_image_part p {
     padding-left: 0px;
   }
 
@@ -923,39 +943,35 @@
     gap: 20px;
     width: 100%;
   }
-  
+
   .article_image_part p {
     width: 90%;
     order: 2;
   }
 
-  .mobile_disply_none_880{
+  .mobile_disply_none_880 {
     display: none;
   }
 
-  .pc_hidden_880{
+  .pc_hidden_880 {
     display: flex;
     margin-top: 2rem;
   }
-  
-  .swiper-container-one{
+
+  .swiper-container-one {
     margin-top: 15rem;
   }
 
-    /* ------------ White Bg Card ------------------- */
-    .card__text {
-      width: 90%;
-      height: 493px;
-      background-color: var(--white);
-      padding: 1rem;
-    }
-  
+  /* ------------ White Bg Card ------------------- */
+  .card__text {
+    width: 90%;
+    height: 493px;
+    background-color: var(--white);
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
-
-
-
   .card__container {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -1058,7 +1074,7 @@
     object-fit: cover;
   }
 
-  .news_box_right_card{
+  .news_box_right_card {
     width: 78%;
   }
 
@@ -1237,9 +1253,13 @@
     padding-top: 10rem;
   }
 
+  .contact {
+    height: auto;
+  }
+
   .contact_right_bottom {
     position: absolute;
-    bottom: -24rem;
+    top: 12rem;
     width: 80%;
     height: -webkit-min-content;
     height: -moz-min-content;
@@ -1248,7 +1268,7 @@
   }
 
   .contact_right {
-    height: 70vh;
+    height: 557px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1477,11 +1497,11 @@
     width: 100%;
   }
 
-  .home__content{
+  .home__content {
     padding-left: 0px;
   }
 
-  .container{
+  .container {
     padding: 0 1rem;
   }
 }
@@ -1584,7 +1604,7 @@
     display: none;
   }
 
-  .fb_join_btn{
+  .fb_join_btn {
     display: block;
   }
 
@@ -1608,7 +1628,6 @@
     line-height: 45px;
     padding-bottom: 18px;
   }
-
 
   .main_heading h1,
   .about_title h1 {
@@ -2184,6 +2203,19 @@
     width: 95%;
   }
 
+
+  .main_bg {
+    height: 500px;
+    margin-top: 140px;
+  }
+
+  
+.program_main_content {
+  background-color: #f7f7f8;
+  margin-top: -5rem;
+}
+  
+
   /* ------------ Program Page Start ------------------- */
 
   .programe_title {
@@ -2192,22 +2224,6 @@
 
   .programe_content {
     height: 360px;
-  }
-
-  .main_bg {
-    height: 500px;
-    z-index: 99;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: -11rem;
-    z-index: 99;
   }
 
   .main_bg a {
@@ -2263,10 +2279,6 @@
   .program_title h5 {
     font-size: 16px;
     line-height: 21px;
-  }
-
-  .programe_one_img {
-    padding-top: 3rem;
   }
 
   .program_two {
@@ -2840,9 +2852,37 @@
     display: flex;
   }
 
-  .news_box_right_card{
+  .news_box_right_card {
     width: 88%;
   }
+
+  .faq_content{
+    padding-top: 4rem;
+  }
+
+  
+.member_card_two {
+  margin-left: 8rem;
+  margin-top: -4rem;
+}
+
+.member_card_one {
+  position: absolute;
+  top: 15rem;
+  left: 24%;
+  z-index: 1;
+  rotate: 10deg;
+}
+
+.member_card_one img,
+.member_card_two img{
+  width: 191px;
+}
+
+.program_members{
+  padding-bottom: 10rem;
+}
+
 }
 
 @media screen and (max-width: 550px) {
@@ -2887,6 +2927,13 @@
     height: 379px;
     width: 100%;
   }
+
+  .program_title .small__heading .main_heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
 
   /* ------------------------ Contact page Start --------------------- */
 
@@ -2960,7 +3007,7 @@
     line-height: 21px;
   }
 
-  .news_box_right_card{
+  .news_box_right_card {
     width: 100%;
   }
 }
@@ -3010,6 +3057,17 @@
   .venture_down {
     margin-top: 6rem;
   }
+
+  .member_card_two {
+    margin-left: 4rem;
+    margin-top: -4rem;
+  }
+  
+.member_card_one {
+  left: 13%;
+  z-index: 1;
+}
+
   /* -----------------------Counter Section ------------------- */
 
   .counter_box {
@@ -3102,8 +3160,6 @@
   .apply_content_left_cards .apply_content_left_card {
     width: 100%;
   }
-
-
 
   /* --------------------------- About Section ----------------------- */
   .buttons .btn_one,
