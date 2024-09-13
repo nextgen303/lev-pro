@@ -402,6 +402,24 @@ let knowledgeCards = new Swiper(".knowledge_image_content", {
   },
 });
 
+
+
+const videos = document.querySelectorAll('.videoElement');
+
+// Loop through each video and add the click event listener
+videos.forEach((video) => {
+  video.addEventListener('click', () => {
+    // Check if the video is playing
+    if (video.paused) {
+      video.muted = false; // Unmute the video
+      video.play(); // Play the video
+    } else {
+      video.pause(); // Pause the video
+      video.muted = true; // Mute the video
+    }
+  });
+});
+
 /*=============== Slider ===============*/
 let reviewCards = new Swiper(".review_card", {
   loop: true,
